@@ -13,7 +13,7 @@ public class Service {
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 
-    public Call getBeerList(){
-        return retrofit.create(BeerApi.class).list();
+    public Call getBeerList(int page){
+        return retrofit.create(BeerApi.class).list(page);
     }
 }
