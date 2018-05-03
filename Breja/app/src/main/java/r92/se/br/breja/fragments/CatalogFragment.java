@@ -14,7 +14,6 @@ import java.util.List;
 
 import r92.se.br.breja.R;
 import r92.se.br.breja.adapter.CatalogAdapter;
-import r92.se.br.breja.listener.EndlessRecyclerViewScrollListener;
 import r92.se.br.breja.manager.CatalagManager;
 import r92.se.br.breja.model.Beer;
 import r92.se.br.breja.util.Util;
