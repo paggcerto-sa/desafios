@@ -14,6 +14,6 @@ public class Service {
             .build();
 
     public Call getBeerList(int page){
-        return retrofit.create(BeerApi.class).list(page);
+        return retrofit.create(BeerApi.class).getList(page);
     }
 }

@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Breja</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_main">Breja</string>
+    <string name="title_detail_main">Detalhe</string>
+
     <string name="tab_text_1">Catálogo</string>
     <string name="tab_text_2">Favoritos</string>
     <string name="section_format">Hello World from section: %1$d</string>

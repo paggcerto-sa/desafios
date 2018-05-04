@@ -11,6 +11,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+import r92.se.br.breja.model.Beer;
+
 import static android.content.Context.MODE_PRIVATE;
 
 public class Util {
@@ -56,5 +58,9 @@ public class Util {
         List<Integer> favoriteList = getFavoriteList(context);
         favoriteList.remove(idBeer);
         saveFavoriteList(favoriteList, context);
+    }
+
+    public static Type getBeerType(){
+        return new TypeToken<Beer>(){}.getType();
     }
 }

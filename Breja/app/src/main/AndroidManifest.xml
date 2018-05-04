@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".activity.DetailActivity"
+                  android:label="@string/title_detail_main">
+
+        </activity>
     </application>
 
 </manifest>
