@@ -60,6 +60,30 @@ public class Util {
         saveFavoriteList(favoriteList, context);
     }
 
+    public static void updateFavoriteList(Integer idBeer, Context context){
+        if(isBeerFavorite(idBeer, context)){
+            Util.removeFavarite(idBeer, context);
+        }else{
+            Util.addFavarite(idBeer, context);
+        }
+    }
+
+    public static boolean isBeerFavorite(int idBeer, Context context){
+        if(Util.getFavoriteList(context).contains(idBeer)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static int getIdImgFavarite(){
+        return android.R.drawable.star_big_on;
+    }
+
+    public static int getIdImgNotFavarite(){
+        return android.R.drawable.star_big_off;
+    }
+
     public static Type getBeerType(){
         return new TypeToken<Beer>(){}.getType();
     }

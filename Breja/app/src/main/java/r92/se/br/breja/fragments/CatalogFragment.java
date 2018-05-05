@@ -75,6 +75,12 @@ public class CatalogFragment extends Fragment {
         catalogPresenter.onStart();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        catalogPresenter.onResume();
+    }
+
     public void updateBeerList(){
         loading = true;
         catalogAdapter.notifyItemRangeChanged(catalogAdapter.getItemCount(), catalogPresenter.getBeerList().size());

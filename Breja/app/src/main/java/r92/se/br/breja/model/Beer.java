@@ -2,28 +2,63 @@ package r92.se.br.breja.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
+import r92.se.br.breja.bean.ItemDetail;
+import r92.se.br.breja.interfaces.HideField;
+import r92.se.br.breja.interfaces.ViewLabel;
+import r92.se.br.breja.util.Util;
+
 public class Beer {
 
+    @HideField
     private Integer id;
+
+    @ViewLabel(value = "Name")
     private String name;
+
+    @ViewLabel(value = "Tagline")
     private String tagline;
+
+    @ViewLabel(value = "First Brewed")
     @SerializedName("first_brewed")
     private String firstBrewed;
+
+    @ViewLabel(value = "Description")
     private String description;
+
+    @HideField
     @SerializedName("image_url")
     private String imageUrl;
+
+    @ViewLabel(value = "ABV")
     private Float abv;
+
+    @ViewLabel(value = "IBU")
     private Float ibu;
+
+    @HideField
     @SerializedName("target_fg")
     private Float targetFg;
+
+    @HideField
     @SerializedName("target_og")
     private Float targetOg;
+
+    @ViewLabel(value = "EBC")
     private Float ebc;
+
+    @ViewLabel(value = "SRM")
     private Float srm;
+
+    @ViewLabel(value = "PH")
     private Float ph;
+
+    @HideField
     @SerializedName("attenuation_level")
     private Float attenuationLevel;
-
 
     public String getName() {
         return name;
@@ -135,5 +170,23 @@ public class Beer {
 
     public void setTagline(String tagline) {
         this.tagline = tagline;
+    }
+
+    public List<ItemDetail> getListForDetail(){
+        List<ItemDetail> list = new ArrayList<>();
+
+        for (Field field: Beer.class.getDeclaredFields()) {
+            field.setAccessible(true);
+            if(!field.isAnnotationPresent(HideField.class) && field.isAnnotationPresent(ViewLabel.class)){
+                try {
+                    ItemDetail itemDetail = new ItemDetail(field.getAnnotation(ViewLabel.class).value(), field.get(this).toString());
+                    list.add(itemDetail);
+                } catch (IllegalAccessException e) {
+                    Util.log("error: " + field.getName());
+                }
+            }
+        }
+
+        return list;
     }
 }

@@ -45,9 +45,9 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogH
         Picasso.get().load(beer.getImageUrl()).into(holder.img);
 
         if(catalogPresenter.isBeerFavorite(beer.getId())){
-            holder.imgFavorite.setImageResource(android.R.drawable.star_big_on);
+            holder.imgFavorite.setImageResource(Util.getIdImgFavarite());
         }else{
-            holder.imgFavorite.setImageResource(android.R.drawable.star_big_off);
+            holder.imgFavorite.setImageResource(Util.getIdImgNotFavarite());
         }
 
         holder.imgFavorite.setOnClickListener(new View.OnClickListener() {

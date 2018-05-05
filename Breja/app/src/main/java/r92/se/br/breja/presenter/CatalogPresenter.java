@@ -25,6 +25,7 @@ public class CatalogPresenter {
     private Service service;
 
     private int page = 1;
+    private Integer position;
 
     private List<Beer> beerList;
 
@@ -41,6 +42,12 @@ public class CatalogPresenter {
 
     public void onStart(){
         getBeerList(page);
+    }
+
+    public void onResume(){
+        if(position != null){
+            catalogFragment.updateItemList(position);
+        }
     }
 
     public void updateBeerList(List<Beer> beerList){
@@ -61,41 +68,27 @@ public class CatalogPresenter {
     }
 
     public void onItemClick(int position){
-        updateFavoriteList(beerList.get(position).getId());
+        Util.updateFavoriteList(beerList.get(position).getId(), catalogFragment.getContext());
         catalogFragment.updateItemList(position);
     }
 
     public void onCardClick(int position){
+        this.position = position;
+
         Intent intent = new Intent(catalogFragment.getContext(), DetailActivity.class);
-
         intent.putExtra(MyConstants.DETAIL_KEY, new Gson().toJson(beerList.get(position), Util.getBeerType()));
-
         catalogFragment.getContext().startActivity(intent);
     }
 
-    private void updateFavoriteList(Integer idBeer){
-        if(isBeerFavorite(idBeer)){
-            Util.removeFavarite(idBeer, catalogFragment.getContext());
-        }else{
-            Util.addFavarite(idBeer, catalogFragment.getContext());
-        }
-    }
-
-    public boolean isBeerFavorite(int idBeer){
-        if(Util.getFavoriteList(catalogFragment.getContext()).contains(idBeer)){
-            return true;
-        }else{
-            return false;
-        }
+    public boolean isBeerFavorite(Integer id){
+        return Util.isBeerFavorite(id,catalogFragment.getContext());
     }
 
     public void getBeerList(int page){
-        Util.log("inicio");
         showProgress();
         service.getBeerList(page).enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) {
-                Util.log("inicio2");
                 if(response.isSuccessful()){
                     List<Beer> beerList = (List<Beer>) response.body();
                     updateBeerList(beerList);
