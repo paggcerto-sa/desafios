@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return CatalogFragment.newInstance();
                 default:
-                    return FavoritesFragment.newInstance(position + 1);
+                    return FavoritesFragment.newInstance();
             }
         }
 

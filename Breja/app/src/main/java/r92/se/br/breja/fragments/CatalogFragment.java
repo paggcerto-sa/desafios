@@ -1,6 +1,7 @@
 package r92.se.br.breja.fragments;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,16 +12,19 @@ import android.widget.ProgressBar;
 
 import r92.se.br.breja.R;
 import r92.se.br.breja.adapter.CatalogAdapter;
+import r92.se.br.breja.interfaces.CatalogPresenterImp;
+import r92.se.br.breja.interfaces.CatalogViewImp;
 import r92.se.br.breja.presenter.CatalogPresenter;
 
-public class CatalogFragment extends Fragment {
+public class CatalogFragment extends Fragment implements CatalogViewImp {
 
     private RecyclerView recyclerView;
     private ProgressBar progressBar;
 
     private CatalogAdapter catalogAdapter;
-    private CatalogPresenter catalogPresenter;
+    private CatalogPresenterImp catalogPresenter;
 
+    private boolean onResume = false;
     private boolean loading = true;
     private int pastVisiblesItems, visibleItemCount, totalItemCount;
 
@@ -28,8 +32,6 @@ public class CatalogFragment extends Fragment {
 
     public static CatalogFragment newInstance() {
         CatalogFragment fragment = new CatalogFragment();
-//        Bundle args = new Bundle();
-//        fragment.setArguments(args);
         return fragment;
     }
 
@@ -78,7 +80,24 @@ public class CatalogFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        onResume = true;
         catalogPresenter.onResume();
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (getView() != null) {
+            FloatingActionButton floatingActionButton = getActivity().findViewById(R.id.fab);
+            floatingActionButton.setVisibility(View.VISIBLE);
+            if (isVisibleToUser) {
+                catalogPresenter.isVisibleToUser();
+            }
+        }
+    }
+
+    public void updateAllBeerList(){
+        catalogAdapter.notifyDataSetChanged();
     }
 
     public void updateBeerList(){

@@ -1,6 +1,7 @@
 package r92.se.br.breja.presenter;
 
 import android.content.Intent;
+import android.view.View;
 
 import com.google.gson.Gson;
 
@@ -23,6 +24,13 @@ public class DetailPresenter {
 
         String beerGson = intent.getExtras().getString(MyConstants.DETAIL_KEY);
         beer = new Gson().fromJson(beerGson, Util.getBeerType());
+
+        Boolean showFab = intent.getExtras().getBoolean(MyConstants.DETAIL_KEY_SHOW_FLOAT);
+        if(showFab){
+            detailActivity.updateVisibilityFab(View.VISIBLE);
+        }else{
+            detailActivity.updateVisibilityFab(View.GONE);
+        }
 
         detailActivity.updateImage(beer.getImageUrl());
         detailActivity.updateName(beer.getName());

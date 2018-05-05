@@ -15,4 +15,7 @@ interface BeerApi {
 
     @GET("beers/{id}")
     Call<Beer> getById(@Path("id") int page);
+
+    @GET("beers")
+    Call<List<Beer>> getByIds(@Query("ids") String ids);
 }

@@ -16,15 +16,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import r92.se.br.breja.R;
+import r92.se.br.breja.interfaces.CatalogPresenterImp;
 import r92.se.br.breja.model.Beer;
 import r92.se.br.breja.presenter.CatalogPresenter;
 import r92.se.br.breja.util.Util;
 
 public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogHolder>{
 
-    private CatalogPresenter catalogPresenter;
+    private CatalogPresenterImp catalogPresenter;
 
-    public CatalogAdapter(CatalogPresenter catalogPresenter){
+    public CatalogAdapter(CatalogPresenterImp catalogPresenter){
         this.catalogPresenter = catalogPresenter;
     }
 
@@ -38,7 +39,7 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogH
     @Override
     public void onBindViewHolder(@NonNull final CatalogHolder holder, final int position) {
         final Beer beer = catalogPresenter.getBeerList().get(position);
-        holder.name.setText(position + " - " + beer.getName());
+        holder.name.setText(beer.getName());
         holder.tagline.setText(beer.getTagline());
         holder.description.setText(beer.getDescription());
 

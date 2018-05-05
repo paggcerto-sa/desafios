@@ -74,4 +74,8 @@ public class DetailActivity extends AppCompatActivity {
     public void updateFabIcon(int idResource){
         fab.setImageResource(idResource);
     }
+
+    public void updateVisibilityFab(Integer id){
+        this.fab.setVisibility(id);
+    }
 }
