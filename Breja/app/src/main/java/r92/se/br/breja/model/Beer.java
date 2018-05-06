@@ -60,6 +60,28 @@ public class Beer {
     @SerializedName("attenuation_level")
     private Float attenuationLevel;
 
+    @ViewLabel(value = "Ingredients")
+    @SerializedName("ingredients")
+    private Ingredients ingredients;
+
+    public List<ItemDetail> getListForDetail(){
+        List<ItemDetail> list = new ArrayList<>();
+
+        for (Field field: Beer.class.getDeclaredFields()) {
+            field.setAccessible(true);
+            if(!field.isAnnotationPresent(HideField.class) && field.isAnnotationPresent(ViewLabel.class)){
+                try {
+                    ItemDetail itemDetail = new ItemDetail(field.getAnnotation(ViewLabel.class).value(), field.get(this).toString());
+                    list.add(itemDetail);
+                } catch (IllegalAccessException e) {
+                    Util.log("error: " + field.getName());
+                }
+            }
+        }
+
+        return list;
+    }
+
     public String getName() {
         return name;
     }
@@ -172,21 +194,11 @@ public class Beer {
         this.tagline = tagline;
     }
 
-    public List<ItemDetail> getListForDetail(){
-        List<ItemDetail> list = new ArrayList<>();
+    public Ingredients getIngredients() {
+        return ingredients;
+    }
 
-        for (Field field: Beer.class.getDeclaredFields()) {
-            field.setAccessible(true);
-            if(!field.isAnnotationPresent(HideField.class) && field.isAnnotationPresent(ViewLabel.class)){
-                try {
-                    ItemDetail itemDetail = new ItemDetail(field.getAnnotation(ViewLabel.class).value(), field.get(this).toString());
-                    list.add(itemDetail);
-                } catch (IllegalAccessException e) {
-                    Util.log("error: " + field.getName());
-                }
-            }
-        }
-
-        return list;
+    public void setIngredients(Ingredients ingredients) {
+        this.ingredients = ingredients;
     }
 }

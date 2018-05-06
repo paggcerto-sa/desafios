@@ -1,25 +1,20 @@
 package r92.se.br.breja.presenter;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
 import r92.se.br.breja.R;
 import r92.se.br.breja.activity.DetailActivity;
 import r92.se.br.breja.constants.MyConstants;
-import r92.se.br.breja.fragments.CatalogFragment;
 import r92.se.br.breja.interfaces.CatalogPresenterImp;
 import r92.se.br.breja.interfaces.CatalogViewImp;
 import r92.se.br.breja.model.Beer;
@@ -150,7 +145,7 @@ public class CatalogPresenter implements CatalogPresenterImp{
 
             @Override
             public void onFailure(Call call, Throwable t) {
-                Util.log("Fail");
+                Util.log("Fail " + t.getMessage() );
             }
         });
     }
