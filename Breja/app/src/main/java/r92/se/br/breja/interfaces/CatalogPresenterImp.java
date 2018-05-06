@@ -14,4 +14,5 @@ public interface CatalogPresenterImp {
     void onStart();
     void onResume();
     void isVisibleToUser();
+    void fabClick();
 }

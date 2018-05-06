@@ -29,6 +29,7 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
     private int pastVisiblesItems, visibleItemCount, totalItemCount;
 
     private LinearLayoutManager layoutManager;
+    private FloatingActionButton fab;
 
     public static CatalogFragment newInstance() {
         CatalogFragment fragment = new CatalogFragment();
@@ -51,6 +52,14 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
 
         catalogAdapter = new CatalogAdapter(catalogPresenter);
         recyclerView.setAdapter(catalogAdapter);
+
+        fab = getActivity().findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                catalogPresenter.fabClick();
+            }
+        });
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override

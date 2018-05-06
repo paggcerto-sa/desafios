@@ -37,6 +37,11 @@ public class FavoritePresenter implements CatalogPresenterImp{
         getBeerFavoriteList();
     }
 
+    @Override
+    public void fabClick() {
+
+    }
+
     public void updateBeerList(List<Beer> beerList){
         this.beerList = beerList;
         catalogView.updateBeerList();

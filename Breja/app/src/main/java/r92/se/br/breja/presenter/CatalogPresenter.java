@@ -1,6 +1,13 @@
 package r92.se.br.breja.presenter;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -9,6 +16,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+import r92.se.br.breja.R;
 import r92.se.br.breja.activity.DetailActivity;
 import r92.se.br.breja.constants.MyConstants;
 import r92.se.br.breja.fragments.CatalogFragment;
@@ -27,6 +35,9 @@ public class CatalogPresenter implements CatalogPresenterImp{
     private Service service;
 
     private int page = 1;
+    private String name = null;
+    private String malt = null;
+
     private Integer position;
     private List<Beer> beerList;
 
@@ -38,11 +49,11 @@ public class CatalogPresenter implements CatalogPresenterImp{
 
     public void increasePage(){
         page++;
-        getBeerList(page);
+        getBeerList(page, name, malt);
     }
 
     public void onStart(){
-        getBeerList(page);
+        getBeerList(page, name, malt);
     }
 
     public void onResume(){
@@ -53,6 +64,39 @@ public class CatalogPresenter implements CatalogPresenterImp{
 
     public void isVisibleToUser(){
         catalogView.updateAllBeerList();
+    }
+
+    @Override
+    public void fabClick() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(catalogView.getContext());
+        LayoutInflater inflater = LayoutInflater.from(catalogView.getContext());
+
+        final View dialogView = inflater.inflate(R.layout.dialog_search, null);
+        final EditText inputName = dialogView.findViewById(R.id.inputName);
+        final EditText inputMalt = dialogView.findViewById(R.id.inputMalt);
+
+        dialog.setView(dialogView);
+        dialog.setTitle(catalogView.getContext().getString(R.string.search));
+        dialog.setCancelable(false);
+
+        dialog.setNegativeButton(catalogView.getContext().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+            }
+        });
+
+        dialog.setPositiveButton(catalogView.getContext().getString(R.string.search), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                page = 1;
+                beerList = new ArrayList<>();
+                String name = inputName.getText().toString();
+                String malt = inputMalt.getText().toString();
+                getBeerList(page, name.isEmpty() ? null : name.replace(" ", "_"), malt.isEmpty() ? null : malt.replace(" ", "_"));
+            }
+        });
+
+        dialog.show();
     }
 
     public void updateBeerList(List<Beer> beerList){
@@ -90,9 +134,11 @@ public class CatalogPresenter implements CatalogPresenterImp{
         return Util.isBeerFavorite(id,catalogView.getContext());
     }
 
-    public void getBeerList(int page){
+    public void getBeerList(int page, String name, String malt) {
+        this.name = name;
+        this.malt = malt;
         showProgress();
-        service.getBeerList(page).enqueue(new Callback() {
+        service.getBeerList(page, name, malt).enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) {
                 if(response.isSuccessful()){
