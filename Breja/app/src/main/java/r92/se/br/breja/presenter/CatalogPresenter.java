@@ -42,21 +42,25 @@ public class CatalogPresenter implements CatalogPresenterImp{
         this.service = new Service();
     }
 
+    @Override
     public void increasePage(){
         page++;
         getBeerList(page, name, malt);
     }
 
+    @Override
     public void onStart(){
         getBeerList(page, name, malt);
     }
 
+    @Override
     public void onResume(){
         if(position != null){
             catalogView.updateItemList(position);
         }
     }
 
+    @Override
     public void isVisibleToUser(){
         catalogView.updateAllBeerList();
     }
@@ -69,6 +73,9 @@ public class CatalogPresenter implements CatalogPresenterImp{
         final View dialogView = inflater.inflate(R.layout.dialog_search, null);
         final EditText inputName = dialogView.findViewById(R.id.inputName);
         final EditText inputMalt = dialogView.findViewById(R.id.inputMalt);
+
+        inputName.setText(this.name != null ? this.name.replace("_", " ") : null);
+        inputMalt.setText(this.malt != null ? this.malt.replace("_", " ") : null);
 
         dialog.setView(dialogView);
         dialog.setTitle(catalogView.getContext().getString(R.string.search));
@@ -83,11 +90,10 @@ public class CatalogPresenter implements CatalogPresenterImp{
         dialog.setPositiveButton(catalogView.getContext().getString(R.string.search), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                page = 1;
                 beerList = new ArrayList<>();
                 String name = inputName.getText().toString();
                 String malt = inputMalt.getText().toString();
-                getBeerList(page, name.isEmpty() ? null : name.replace(" ", "_"), malt.isEmpty() ? null : malt.replace(" ", "_"));
+                getBeerList(1, name.isEmpty() ? null : name.replace(" ", "_"), malt.isEmpty() ? null : malt.replace(" ", "_"));
             }
         });
 
@@ -107,15 +113,18 @@ public class CatalogPresenter implements CatalogPresenterImp{
         catalogView.dismissProgress();
     }
 
+    @Override
     public List<Beer> getBeerList() {
         return beerList;
     }
 
+    @Override
     public void onItemClick(int position){
         Util.updateFavoriteList(beerList.get(position).getId(), catalogView.getContext());
         catalogView.updateItemList(position);
     }
 
+    @Override
     public void onCardClick(int position){
         this.position = position;
 
@@ -125,11 +134,13 @@ public class CatalogPresenter implements CatalogPresenterImp{
         catalogView.getContext().startActivity(intent);
     }
 
+    @Override
     public boolean isBeerFavorite(Integer id){
         return Util.isBeerFavorite(id,catalogView.getContext());
     }
 
     public void getBeerList(int page, String name, String malt) {
+        this.page = page;
         this.name = name;
         this.malt = malt;
         showProgress();
@@ -137,15 +148,21 @@ public class CatalogPresenter implements CatalogPresenterImp{
             @Override
             public void onResponse(Call call, Response response) {
                 if(response.isSuccessful()){
-                    List<Beer> beerList = (List<Beer>) response.body();
-                    updateBeerList(beerList);
+                    List<Beer> beerListReturn = (List<Beer>) response.body();
+                    if(beerListReturn.size() == 0){
+                        Util.showToast(catalogView.getContext(), "No results.");
+                    }
+                    if(!beerList.equals(beerListReturn)){
+                        updateBeerList(beerListReturn);
+                    }
                     dismissProgress();
                 }
             }
 
             @Override
             public void onFailure(Call call, Throwable t) {
-                Util.log("Fail " + t.getMessage() );
+                dismissProgress();
+                Util.showToast(catalogView.getContext(), "Failed to perform request.");
             }
         });
     }

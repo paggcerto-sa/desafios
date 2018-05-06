@@ -55,16 +55,19 @@ public class FavoritePresenter implements CatalogPresenterImp{
         catalogView.dismissProgress();
     }
 
+    @Override
     public List<Beer> getBeerList() {
         return beerList;
     }
 
+    @Override
     public void onItemClick(int position){
         Util.removeFavarite(beerList.get(position).getId(), catalogView.getContext());
         beerList.remove(position);
         catalogView.updateBeerList();
     }
 
+    @Override
     public void onCardClick(int position){
         Intent intent = new Intent(catalogView.getContext(), DetailActivity.class);
         intent.putExtra(MyConstants.DETAIL_KEY, new Gson().toJson(beerList.get(position), Util.getBeerType()));
@@ -87,6 +90,7 @@ public class FavoritePresenter implements CatalogPresenterImp{
 
     }
 
+    @Override
     public boolean isBeerFavorite(Integer id){
         return Util.isBeerFavorite(id,catalogView.getContext());
     }
@@ -111,7 +115,8 @@ public class FavoritePresenter implements CatalogPresenterImp{
 
             @Override
             public void onFailure(Call call, Throwable t) {
-                Util.log(t.getMessage());
+                dismissProgress();
+                Util.showToast(catalogView.getContext(), "Failed to perform request.");
             }
         });
     }

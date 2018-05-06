@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Breja</string>
+    <string name="app_name">Cervejeiros SA</string>
 
-    <string name="title_activity_main">Breja</string>
+    <string name="title_activity_main">Cervejeiros SA</string>
     <string name="title_detail_main">Detail</string>
 
     <string name="tab_text_1">Catalog</string>

@@ -39,7 +39,7 @@ public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogH
     @Override
     public void onBindViewHolder(@NonNull final CatalogHolder holder, final int position) {
         final Beer beer = catalogPresenter.getBeerList().get(position);
-        holder.name.setText(position + beer.getName());
+        holder.name.setText(beer.getName());
         holder.tagline.setText(beer.getTagline());
         holder.description.setText(beer.getDescription());
 

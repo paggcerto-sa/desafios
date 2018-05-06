@@ -3,6 +3,7 @@ package r92.se.br.breja.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -86,5 +87,9 @@ public class Util {
 
     public static Type getBeerType(){
         return new TypeToken<Beer>(){}.getType();
+    }
+
+    public static void showToast(Context context, String msg){
+        Toast.makeText(context, msg, Toast.LENGTH_SHORT).show();
     }
 }

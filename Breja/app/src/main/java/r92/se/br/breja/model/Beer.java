@@ -5,6 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import r92.se.br.breja.bean.ItemDetail;
 import r92.se.br.breja.interfaces.HideField;
@@ -200,5 +201,20 @@ public class Beer {
 
     public void setIngredients(Ingredients ingredients) {
         this.ingredients = ingredients;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Beer beer = (Beer) o;
+
+        return getId().equals(beer.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getId().hashCode();
     }
 }
