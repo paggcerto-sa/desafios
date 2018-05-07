@@ -1,6 +1,8 @@
 package r92.se.br.breja.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,12 +26,10 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
     private CatalogAdapter catalogAdapter;
     private CatalogPresenterImp catalogPresenter;
 
-    private boolean onResume = false;
     private boolean loading = true;
     private int pastVisiblesItems, visibleItemCount, totalItemCount;
 
     private LinearLayoutManager layoutManager;
-    private FloatingActionButton fab;
 
     public static CatalogFragment newInstance() {
         CatalogFragment fragment = new CatalogFragment();
@@ -42,10 +42,15 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_catalog, container, false);
+        return inflater.inflate(R.layout.fragment_catalog, container, false);
+    }
 
-        recyclerView = rootView.findViewById(R.id.catalogRV);
-        progressBar = rootView.findViewById(R.id.progressBar);
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        recyclerView = view.findViewById(R.id.catalogRV);
+        progressBar = view.findViewById(R.id.progressBar);
 
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
@@ -53,7 +58,7 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
         catalogAdapter = new CatalogAdapter(catalogPresenter);
         recyclerView.setAdapter(catalogAdapter);
 
-        fab = getActivity().findViewById(R.id.fab);
+        FloatingActionButton fab = getActivity().findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,8 +81,6 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
                 }
             }
         });
-
-        return rootView;
     }
 
     @Override
@@ -89,7 +92,6 @@ public class CatalogFragment extends Fragment implements CatalogViewImp {
     @Override
     public void onResume() {
         super.onResume();
-        onResume = true;
         catalogPresenter.onResume();
     }
 

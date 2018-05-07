@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import r92.se.br.breja.R;
 import r92.se.br.breja.adapter.CatalogAdapter;
 import r92.se.br.breja.interfaces.CatalogViewImp;
-import r92.se.br.breja.presenter.CatalogPresenter;
 import r92.se.br.breja.presenter.FavoritePresenter;
 
 public class FavoritesFragment extends Fragment implements CatalogViewImp {

@@ -5,7 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import r92.se.br.breja.bean.ItemDetail;
 import r92.se.br.breja.interfaces.HideField;

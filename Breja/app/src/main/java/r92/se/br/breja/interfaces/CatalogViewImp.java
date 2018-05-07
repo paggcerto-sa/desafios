@@ -4,11 +4,11 @@ import android.content.Context;
 
 public interface CatalogViewImp {
 
-    public void updateItemList(int position);
-    public void updateBeerList();
-    public void updateAllBeerList();
-    public Context getContext();
-    public void showProgress();
-    public void dismissProgress();
+    void updateItemList(int position);
+    void updateBeerList();
+    void updateAllBeerList();
+    Context getContext();
+    void showProgress();
+    void dismissProgress();
 
 }

@@ -32,52 +32,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CatalogPresenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="164" column="87" lean-forward="true" selection-start-line="163" selection-start-column="16" selection-end-line="164" selection-end-column="87" />
-              <folding>
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1629#1630#0" expanded="true" />
-                <element signature="e#2727#3179#0" expanded="true" />
-                <element signature="e#3178#3179#0" expanded="true" />
-                <element signature="method#onItemClick#0;class#CatalogPresenter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FavoritePresenter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/FavoritePresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-              <folding>
-                <element signature="method#fabClick#0;class#FavoritePresenter#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,15 +47,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>progressBar</find>
       <find>recyclerView</find>
       <find>line</find>
       <find>loading</find>
@@ -108,6 +67,8 @@
       <find>isBeerFavorite</find>
       <find>onItemClick</find>
       <find>increasePage</find>
+      <find>getListItem</find>
+      <find>progressBar</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2139,42 +2100,43 @@
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/ViewLabel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/HideField.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/bean/ItemDetail.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/DetailAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/FavoritePresenterImp.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogViewImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/FavoritesFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/DetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/constants/MyConstants.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/DetailPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/CatalogFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogPresenterImp.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_search.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/service/BeerApi.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/service/Service.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Ingredients.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Amount.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Hops.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Malt.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Beer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/util/Util.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/FavoritePresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogViewImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/DetailViewImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/DetailPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/DetailPresenterImp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/DetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/CatalogFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/DetailAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/FavoritesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Beer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/service/BeerApi.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -2191,7 +2153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2215,33 +2177,85 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="presenter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Breja" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="breja" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="str&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/values/colors.xml&#10;uti&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/util/Util.java&#10;ada&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java&#10;cata&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java&#10;bee&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/model/Beer.java&#10;adap&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java&#10;main&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/layout/activity_main.xml&#10;row&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/layout/row_catalog.xml&#10;androidman&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/AndroidManifest.xml&#10;catalogada&#9;PSI&#9;JAVA://r92.se.br.breja.adapter.CatalogAdapter" />
-    <property name="device.picker.selection" value="9ace9af3" />
+    <property name="SearchEverywhereHistoryKey" value="string&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/values/strings.xml&#10;favorit&#9;PSI&#9;JAVA://r92.se.br.breja.fragments.FavoritesFragment&#10;fragm&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/fragments/CatalogFragment.java&#10;detail&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/layout/activity_detail.xml&#10;frag&#9;PSI&#9;JAVA://r92.se.br.breja.fragments.CatalogFragment&#10;str&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/values/strings.xml&#10;colo&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/values/colors.xml&#10;uti&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/util/Util.java&#10;ada&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java&#10;cata&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java&#10;bee&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/model/Beer.java&#10;adap&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java&#10;main&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/layout/activity_main.xml&#10;row&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/res/layout/row_catalog.xml&#10;androidman&#9;FILE&#9;file:///Users/rodolfo/AndroidStudioProjects/AvaliacaoMobile/Breja/app/src/main/AndroidManifest.xml&#10;catalogada&#9;PSI&#9;JAVA://r92.se.br.breja.adapter.CatalogAdapter" />
+    <property name="device.picker.selection" value="3300be36e76d2487" />
     <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
@@ -2420,7 +2434,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2430,14 +2444,15 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26687434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26564497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19755058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26466382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669221" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2451,16 +2466,47 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26687434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2669221" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453505" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2653791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2499,23 +2545,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/service/BeerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -2575,6 +2604,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogView.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/manager/BeerManager.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
@@ -2582,9 +2614,6 @@
             <element signature="e#975#1002#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_scrolling.xml" />
@@ -2597,27 +2626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/HideField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/ViewLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/bean/ItemDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -2641,23 +2649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/DetailAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/FavoritePresenterImp.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer2">
@@ -2673,50 +2664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/FavoritesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
-          <folding>
-            <element signature="e#1091#1092#0" expanded="false" />
-            <element signature="e#1154#1155#0" expanded="false" />
-            <element signature="e#2215#2216#0" expanded="false" />
-            <element signature="e#2268#2269#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/constants/MyConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/DetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/DetailPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/CatalogFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="59" column="44" lean-forward="false" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_search.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2728,10 +2675,236 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_scrolling.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/DetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2002#2003#0" expanded="false" />
+            <element signature="e#2041#2042#0" expanded="false" />
+            <element signature="e#2097#2098#0" expanded="false" />
+            <element signature="e#2154#2155#0" expanded="false" />
+            <element signature="e#2216#2217#0" expanded="false" />
+            <element signature="e#2264#2265#0" expanded="false" />
+            <element signature="e#2328#2329#0" expanded="false" />
+            <element signature="e#2370#2371#0" expanded="false" />
+            <element signature="e#2419#2420#0" expanded="false" />
+            <element signature="e#2446#2447#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/DetailAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/bean/ItemDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/constants/MyConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="77" lean-forward="false" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/CatalogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/fragments/FavoritesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="59" column="63" lean-forward="true" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+          <folding>
+            <element signature="e#2164#2165#0" expanded="false" />
+            <element signature="e#2217#2218#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogPresenterImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogViewImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/DetailPresenterImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/DetailViewImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/HideField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/ViewLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Amount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Beer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="207" column="40" lean-forward="false" selection-start-line="207" selection-start-column="40" selection-end-line="207" selection-end-column="40" />
+          <folding>
+            <element signature="method#setAttenuationLevel#0;class#Beer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Hops.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="101" lean-forward="false" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Ingredients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Malt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="164" column="87" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="164" selection-end-column="87" />
+          <folding>
+            <element signature="method#onItemClick#0;class#CatalogPresenter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/DetailPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#1700#1701#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/FavoritePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="62" column="13" lean-forward="false" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding>
+            <element signature="method#fabClick#0;class#FavoritePresenter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/service/BeerApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="13" column="103" lean-forward="false" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
+          <caret line="12" column="103" lean-forward="false" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2743,153 +2916,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_scrolling.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Amount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#134#135#0" expanded="false" />
-            <element signature="e#161#162#0" expanded="false" />
-            <element signature="e#201#202#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
-            <element signature="e#264#265#0" expanded="false" />
-            <element signature="e#292#293#0" expanded="false" />
-            <element signature="e#333#334#0" expanded="false" />
-            <element signature="e#367#368#0" expanded="false" />
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#461#462#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Hops.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="101" lean-forward="false" selection-start-line="43" selection-start-column="101" selection-end-line="43" selection-end-column="101" />
-          <folding>
-            <element signature="e#188#189#0" expanded="false" />
-            <element signature="e#215#216#0" expanded="false" />
-            <element signature="e#255#256#0" expanded="false" />
-            <element signature="e#287#288#0" expanded="false" />
-            <element signature="e#320#321#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#393#394#0" expanded="false" />
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#621#622#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Malt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#134#135#0" expanded="false" />
-            <element signature="e#161#162#0" expanded="false" />
-            <element signature="e#201#202#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
-            <element signature="e#266#267#0" expanded="false" />
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#375#376#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Ingredients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="46" column="29" lean-forward="false" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#323#324#0" expanded="false" />
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#406#407#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#640#641#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#710#711#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/model/Beer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="208" column="40" lean-forward="false" selection-start-line="208" selection-start-column="40" selection-end-line="208" selection-end-column="40" />
-          <folding>
-            <element signature="method#setAttenuationLevel#0;class#Beer#0" expanded="false" />
-            <element signature="e#4154#4155#0" expanded="false" />
-            <element signature="e#4188#4189#0" expanded="false" />
-            <element signature="e#4247#4248#0" expanded="false" />
-            <element signature="e#4293#4294#0" expanded="false" />
-            <element signature="e#4575#4576#0" expanded="false" />
-            <element signature="e#4616#4617#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="580">
           <caret line="92" column="64" lean-forward="false" selection-start-line="92" selection-start-column="64" selection-end-line="92" selection-end-column="64" />
-          <folding>
-            <element signature="e#2640#2641#0" expanded="false" />
-            <element signature="e#2694#2695#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/adapter/CatalogAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogViewImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/interfaces/CatalogPresenterImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2897,34 +2927,8 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/CatalogPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="164" column="87" lean-forward="true" selection-start-line="163" selection-start-column="16" selection-end-line="164" selection-end-column="87" />
-          <folding>
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#2727#3179#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="method#onItemClick#0;class#CatalogPresenter#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/r92/se/br/breja/presenter/FavoritePresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="62" column="13" lean-forward="true" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-          <folding>
-            <element signature="method#fabClick#0;class#FavoritePresenter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

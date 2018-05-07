@@ -1,6 +1,5 @@
 package r92.se.br.breja.adapter;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
@@ -12,13 +11,9 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import r92.se.br.breja.R;
 import r92.se.br.breja.interfaces.CatalogPresenterImp;
 import r92.se.br.breja.model.Beer;
-import r92.se.br.breja.presenter.CatalogPresenter;
 import r92.se.br.breja.util.Util;
 
 public class CatalogAdapter extends RecyclerView.Adapter<CatalogAdapter.CatalogHolder>{
