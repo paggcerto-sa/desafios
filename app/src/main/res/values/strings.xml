@@ -108,4 +108,6 @@
     <string name="malt_name">Malt Name</string>
     <string name="navigation_drawer_open">Open Filters</string>
     <string name="navigation_drawer_close">Close Filters</string>
+    <string name="no_results">No Results.</string>
+    <string name="no_favorites">No Favorites.</string>
 </resources>

@@ -44,7 +44,6 @@ public class ApiService {
 
         }
 
-        System.out.println(sb.toString());
         return sb.toString().replaceAll(" ", "%20");
 
     }

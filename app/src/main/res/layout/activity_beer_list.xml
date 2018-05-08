@@ -15,6 +15,18 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".app.beerList.BeerListActivity">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:text="@string/no_results"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18sp"
+            android:id="@+id/textNoResults"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appBarBase"
             android:layout_width="match_parent"
@@ -44,6 +56,8 @@
 
 
         </android.support.v4.widget.SwipeRefreshLayout>
+
+
 
     </RelativeLayout>
 

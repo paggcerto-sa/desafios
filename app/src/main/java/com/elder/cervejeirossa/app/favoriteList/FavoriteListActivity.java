@@ -7,16 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.elder.cervejeirossa.R;
-import com.elder.cervejeirossa.adapters.BeersAdapter;
 import com.elder.cervejeirossa.adapters.FavoriteBeersAdapter;
 import com.elder.cervejeirossa.app.beerDetail.BeerDetailActivity;
-import com.elder.cervejeirossa.app.beerList.BeerListPresenter;
-import com.elder.cervejeirossa.app.beerList.BeerListPresenterImpl;
-import com.elder.cervejeirossa.app.beerList.BeerListView;
-import com.elder.cervejeirossa.models.Beer;
 import com.elder.cervejeirossa.models.LocalBeer;
 
 import java.util.List;
@@ -25,15 +22,18 @@ public class FavoriteListActivity extends AppCompatActivity implements FavoriteL
 
     protected RecyclerView recyclerView;
     protected SwipeRefreshLayout swipe;
+    protected TextView textNoResults;
 
     private FavoriteListPresenter presenter;
 
-    @Override protected void onResume() {
+    @Override
+    protected void onResume() {
         super.onResume();
         presenter.onResume();
     }
 
-    @Override protected void onDestroy() {
+    @Override
+    protected void onDestroy() {
         presenter.onDestroy();
         super.onDestroy();
     }
@@ -42,7 +42,7 @@ public class FavoriteListActivity extends AppCompatActivity implements FavoriteL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_favorite_list);
-        if(getSupportActionBar() != null)
+        if (getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
@@ -54,7 +54,7 @@ public class FavoriteListActivity extends AppCompatActivity implements FavoriteL
     @Override
     public boolean onOptionsItemSelected(final MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 break;
@@ -76,9 +76,10 @@ public class FavoriteListActivity extends AppCompatActivity implements FavoriteL
                 presenter.onResume();
             }
         });
+        textNoResults = (TextView) findViewById(R.id.textNoResults);
     }
 
-    /* Implementação dos Métodos da Interface BeerListView  */
+    /* Implementação dos Métodos da Interface FavoriteListView  */
 
     @Override
     public void startLoading() {
@@ -92,7 +93,12 @@ public class FavoriteListActivity extends AppCompatActivity implements FavoriteL
 
     @Override
     public void setItens(List<LocalBeer> beerList) {
-        recyclerView.swapAdapter(new FavoriteBeersAdapter(this, beerList), false);
+        recyclerView.setAdapter(new FavoriteBeersAdapter(this, beerList));
+        if(beerList.size() > 0){
+            textNoResults.setVisibility(View.GONE);
+        }else{
+            textNoResults.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

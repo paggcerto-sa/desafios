@@ -18,9 +18,12 @@ import android.text.InputType;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.elder.cervejeirossa.R;
@@ -37,6 +40,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
     protected RecyclerView recyclerView;
     protected SwipeRefreshLayout swipe;
     protected NavigationView navView;
+    protected TextView textNoResults;
     private DrawerLayout drawer;
     private Toolbar toolbar;
 
@@ -99,12 +103,12 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
 
-        if(item.isChecked()){
+        if (item.isChecked()) {
 
             presenter.removeFilter(item.getOrder());
             item.setChecked(false);
 
-        }else{
+        } else {
 
             switch (item.getItemId()) {
 
@@ -129,9 +133,9 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
                     break;
             }
 
-            drawer.closeDrawer(GravityCompat.START);
         }
 
+        drawer.closeDrawer(GravityCompat.START);
         return true;
 
     }
@@ -160,6 +164,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
         toggle.syncState();
         navView = (NavigationView) findViewById(R.id.nav_view);
         navView.setNavigationItemSelectedListener(this);
+        textNoResults = (TextView) findViewById(R.id.textNoResults);
     }
 
     /* Implementação dos Métodos da Interface BeerListView  */
@@ -177,6 +182,11 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
     @Override
     public void setItens(List<Beer> beerList) {
         recyclerView.swapAdapter(new BeersAdapter(this, beerList), false);
+        if(beerList.size() > 0){
+            textNoResults.setVisibility(View.GONE);
+        }else{
+            textNoResults.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -193,6 +203,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
 
     }
 
+    /* Diálogo para usuário digitar o texto do filtro escolhido  */
     @Override
     public void callFilterTextDialog(final String parameter, final MenuItem item) {
 
@@ -202,6 +213,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
         final EditText input = new EditText(this);
         input.setGravity(Gravity.CENTER);
         input.setInputType(InputType.TYPE_CLASS_TEXT);
+        input.setHint(parameter);
         builder.setView(input);
 
         builder.setPositiveButton("Add", new DialogInterface.OnClickListener() {
@@ -209,7 +221,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
             public void onClick(DialogInterface dialog, int which) {
                 String filterText = input.getText().toString();
 
-                if(filterText.length() > 0){
+                if (filterText.length() > 0) {
 
                     Filter filter = new Filter(parameter, filterText);
                     presenter.addFilter(filter, item.getOrder());
@@ -225,11 +237,7 @@ public class BeerListActivity extends AppCompatActivity implements NavigationVie
             }
         });
 
+
         builder.show();
-        InputMethodManager inputMethodManager =
-                (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-        inputMethodManager.toggleSoftInputFromWindow(
-                new LinearLayout(this).getApplicationWindowToken(),
-                InputMethodManager.SHOW_FORCED, 0);
     }
 }
