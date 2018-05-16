@@ -1,4 +1,4 @@
-# Avaliação Mobile
+# Aplicativo Mobile
 
 A **‘Cervejeiros SA’** está querendo inovar no mercado dos entusiastas de cervejas. Para isso, ficou decidido que a criação de uma aplicação mobile, que permita aos usuários consultarem informações sobre as cervejas existentes, é a melhor forma de se fazer isso.
 
