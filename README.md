@@ -1,4 +1,4 @@
-# Você é movido a desafios?
+# Paggcerto Desafios
 
 Neste repositório disponibilizamos os desafios da [Paggcerto](https://www.paggcerto.com.br/) para os nossos novos talentos.
 
