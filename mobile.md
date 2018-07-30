@@ -9,6 +9,7 @@ Além da listagem **deverá haver uma ‘tela’ com os detalhes da cerveja**. I
 ## Bônus
 
 Implementar *infinite scroll* na tela de consulta/busca/listagem (não é obrigatório).
+Utilizar o padrão de arquitetura de software **MVP (Modal-View-Presenter)**.
 
 ## Informações Adicionais
 
