@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cervejeiros SA</string>
+
+    <string name="title_activity_main">Cervejeiros SA</string>
+    <string name="title_detail_main">Detail</string>
+
+    <string name="tab_text_1">Catalog</string>
+    <string name="tab_text_2">Favorites</string>
+
+    <string name="name">Name</string>
+    <string name="malt">Malt</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+</resources>
