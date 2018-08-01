@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".app.beerDetail.BeerDetailActivity"
+    tools:showIn="@layout/activity_beer_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:id="@+id/textName"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/cardview_dark_background"
+            android:text="Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tagline"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:layout_below="@id/textName"
+            android:id="@+id/textTagline"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mm/yyyy"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16sp"
+            android:layout_below="@id/textTagline"
+            android:id="@+id/textFirstBrewed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="italic"
+            android:gravity="start"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            android:layout_below="@id/textFirstBrewed"
+            android:id="@+id/textDescription"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredients"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            android:layout_below="@id/textDescription"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textTitleIngredients"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ingredients"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_below="@id/textTitleIngredients"
+            android:id="@+id/textIngredients"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pairs_with"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            android:layout_below="@id/textIngredients"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textTitleFoodPairing"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="food"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_below="@id/textTitleFoodPairing"
+            android:id="@+id/textFoodPairing"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tips"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            android:layout_below="@id/textFoodPairing"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textTitleTips"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="food"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:layout_below="@id/textTitleTips"
+            android:id="@+id/textTips"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/by"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="14sp"
+            android:layout_below="@id/textTips"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textContributedBy"/>
+
+    </RelativeLayout>
+    
+</android.support.v4.widget.NestedScrollView>
