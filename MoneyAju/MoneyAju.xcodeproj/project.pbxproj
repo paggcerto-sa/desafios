@@ -23,6 +23,7 @@
 		4AE82E6A217AD08A004F55E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE82E69217AD08A004F55E4 /* HomeViewController.swift */; };
 		4AF64AF2217B7C6400DECA70 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF64AF1217B7C6400DECA70 /* Rates.swift */; };
 		4AF64AF4217B962D00DECA70 /* PickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF64AF3217B962D00DECA70 /* PickerDialog.swift */; };
+		4AF64AF6217BA5B300DECA70 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF64AF5217BA5B300DECA70 /* Wallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		4AE82E69217AD08A004F55E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4AF64AF1217B7C6400DECA70 /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		4AF64AF3217B962D00DECA70 /* PickerDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDialog.swift; sourceTree = "<group>"; };
+		4AF64AF5217BA5B300DECA70 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		5A6719AF6E573B435A1FFCFF /* Pods-MoneyAju.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.debug.xcconfig"; sourceTree = "<group>"; };
 		B2EDFDDD186B073105D4D582 /* Pods-MoneyAju.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.release.xcconfig"; sourceTree = "<group>"; };
 		CBD4DE52684DBC703E647C6D /* Pods_MoneyAju.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyAju.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 				4A015D99217AD3AB0061C7E2 /* Extensions.swift */,
 				4A3DB093217AEF7100299D20 /* NetworkHelper.swift */,
 				4AF64AF3217B962D00DECA70 /* PickerDialog.swift */,
+				4AF64AF5217BA5B300DECA70 /* Wallet.swift */,
 			);
 			path = "Helpers And Extensions";
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF64AF6217BA5B300DECA70 /* Wallet.swift in Sources */,
 				4A3DB094217AEF7100299D20 /* NetworkHelper.swift in Sources */,
 				4A20F6D0217AC49800B783D9 /* LoginViewController.swift in Sources */,
 				4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */,

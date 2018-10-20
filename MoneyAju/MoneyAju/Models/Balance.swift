@@ -11,7 +11,7 @@ import ObjectMapper
 
 class Balance:Mappable {
     var currency:String? = nil
-    var value:Float? = nil
+    var value:Double? = nil
     
     required init?(map: Map) {
     }

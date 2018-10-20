@@ -15,7 +15,7 @@ class FireBaseHelper {
     public static func register(email:String, password:String, onCompletion:@escaping ((Bool) -> Void)) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if error == nil {
-                self.addBalanco(currency: "BRL", valor: 10000.00)
+                self.addBalance(currency: "BRL", valor: 10000.00)
             }
             onCompletion(error == nil)
         }
@@ -38,22 +38,17 @@ class FireBaseHelper {
         }
     }
     
-    public static func addBalanco(currency:String, valor:Float) {
-        let userID = Auth.auth().currentUser?.uid
-        var ref: DatabaseReference!
-        ref = Database.database().reference()
-        let postRef = ref.child("accounts").child(userID!).child("balances").childByAutoId()
-        let novoValor:[String:Any] = ["currency":currency, "value":valor]
-        postRef.setValue(novoValor)
-    }
-    
-    public static func getBalances(onCompletion:@escaping (([String : Balance]?) -> Void)) {
+    public static func getBalances(onCompletion:@escaping (([Balance]?) -> Void)) {
         let userID = Auth.auth().currentUser?.uid
         var ref: DatabaseReference!
         ref = Database.database().reference()
         ref.child("accounts").child(userID!).child("balances").observeSingleEvent(of: .value, with: { (snapshot) in
             if let arrayItens = snapshot.value as? NSDictionary {
-                let balances = Mapper<Balance>().mapDictionary(JSON: arrayItens as! [String : [String : Any]])
+                var jsonConverted:[[String:Any]] = []
+                for (k,j) in arrayItens {
+                    jsonConverted.append(["currency":k, "value":j])
+                }
+                let balances = Mapper<Balance>().mapArray(JSONArray: jsonConverted)
                 onCompletion(balances)
             } else {
                 onCompletion(nil)
@@ -64,7 +59,11 @@ class FireBaseHelper {
         }
     }
     
-    public static func isLogged() -> Bool {
-        return Auth.auth().currentUser != nil
+    public static func addBalance(currency:String, valor:Double) {
+        let userID = Auth.auth().currentUser?.uid
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        let postRef = ref.child("accounts").child(userID!).child("balances").child(currency)
+        postRef.setValue(valor)
     }
 }

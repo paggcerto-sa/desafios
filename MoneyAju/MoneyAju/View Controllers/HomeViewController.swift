@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
             if loggedOut {
                 self.dismiss(animated: true, completion: nil)
             } else {
-                self.showAlert(message: "Erro ao deslogar.")
+                self.showAlert(message: "Logout error.")
             }
         }
     }

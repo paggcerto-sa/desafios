@@ -16,7 +16,15 @@ enum URL:String {
 }
 
 class NetworkHelper {
+    
+    private static var latestRates:[Rate] = []
+    
     public static func getCurrencyList(onCompletion:@escaping ([Rate]?) -> Void) {
+        if latestRates.count > 0 {
+            onCompletion(latestRates)
+            return
+        }
+        
         Alamofire.request(URL.RateList.rawValue).responseJSON { response in
             switch response.result {
             case .success(_):
@@ -26,7 +34,8 @@ class NetworkHelper {
                     for (k,j) in rates {
                         jsonConverted.append(["currency":k, "value":j])
                     }
-                    onCompletion(Mapper<Rate>().mapArray(JSONArray: jsonConverted))
+                    latestRates = Mapper<Rate>().mapArray(JSONArray: jsonConverted)
+                    onCompletion(latestRates)
                 } else {
                     onCompletion(nil)
                 }

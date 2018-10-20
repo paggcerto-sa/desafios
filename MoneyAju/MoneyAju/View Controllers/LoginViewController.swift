@@ -30,22 +30,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
     }
     
-    // Only for network test. No need of firebase for now.
-    override func viewDidAppear(_ animated: Bool) {
-        self.performSegue(withIdentifier: "segueToHome", sender: nil)
-    }
-    
     @IBAction func loginButtonTapped(_ sender: Any) {
         if validateFields() {
             setButtonsEnabled(false)
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
             FireBaseHelper.login(email: loginTextField.text!, password: passwordTextField.text!) { (logged) in
-                self.setButtonsEnabled(true)
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
                 if logged {
                     self.performSegue(withIdentifier: "segueToHome", sender: nil)
                 } else {
-                    self.showAlert(message: "Erro ao logar-se.")
+                    self.showAlert(message: "Login error.")
+                    self.setButtonsEnabled(true)
                 }
             }
         }
@@ -61,7 +56,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if registered {
                     self.performSegue(withIdentifier: "segueToHome", sender: nil)
                 } else {
-                    self.showAlert(message: "Erro ao registrar-se.")
+                    self.showAlert(message: "Register error.")
                 }
             }
         }
