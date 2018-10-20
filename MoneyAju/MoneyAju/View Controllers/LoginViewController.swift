@@ -21,8 +21,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Private properties
     var loginController:MDCTextInputControllerOutlined!
     var passwordController:MDCTextInputControllerOutlined!
-    let loginButtonScheme:MDCButtonScheme = MDCButtonScheme()
-    let registerButtonScheme:MDCButtonScheme = MDCButtonScheme()
     
     // MARK: Override functions
     override func viewDidLoad() {
@@ -72,8 +70,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     private func configureMaterialComponents(){
         loginController = MDCTextInputControllerOutlined(textInput: loginTextField)
         passwordController = MDCTextInputControllerOutlined(textInput: passwordTextField)
-        MDCContainedButtonThemer.applyScheme(loginButtonScheme, to: loginButton)
-        MDCContainedButtonThemer.applyScheme(registerButtonScheme, to: registerButton)
     }
     
     private func setButtonsEnabled(_ enabled:Bool) {

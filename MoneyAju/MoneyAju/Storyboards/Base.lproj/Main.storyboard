@@ -24,21 +24,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-5x-AGo" userLabel="Login Text Field" customClass="MDCTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="teste@te.te" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-5x-AGo" userLabel="Login Text Field" customClass="MDCTextField">
                                 <rect key="frame" x="20" y="142" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUF-tN-V5O" userLabel="Password Text Field" customClass="MDCTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUF-tN-V5O" userLabel="Password Text Field" customClass="MDCTextField">
                                 <rect key="frame" x="20" y="192" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSb-Gi-VAX" customClass="MDCButton">
-                                <rect key="frame" x="20" y="282" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47717863321304321" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="282" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.32941176470588235" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="4Uj-0n-3jQ"/>
+                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -47,8 +50,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWY-Lw-Pof" customClass="MDCButton">
-                                <rect key="frame" x="205" y="282" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47717863321304321" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="205" y="282" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.32941176470588235" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="qcl-0D-ZdO"/>
+                                </constraints>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -89,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="-143" y="35"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Money Aju-->
         <scene sceneID="qK7-hM-Bex">
             <objects>
                 <viewController id="Zz4-zo-e7M" customClass="HomeViewController" customModule="MoneyAju" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,9 +103,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mta-sY-Pqf">
-                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
-                                <state key="normal" title="LOGOUT"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtj-9u-1VJ" customClass="MDCButton">
+                                <rect key="frame" x="112.5" y="159.5" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15155507800000001" green="0.33028735749999999" blue="0.6371946383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="eKe-jP-MN5"/>
+                                </constraints>
+                                <state key="normal" title="BALANCE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="balanceButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="duc-a3-8bl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bR-eU-One" customClass="MDCButton">
+                                <rect key="frame" x="112.5" y="209.5" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15155507800000001" green="0.33028735749999999" blue="0.6371946383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Hd0-8m-VMc"/>
+                                </constraints>
+                                <state key="normal" title="RATES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratesButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="h8r-XA-MeS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE9-X5-ZZd" customClass="MDCButton">
+                                <rect key="frame" x="112.5" y="259.5" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15155507800000001" green="0.33028735749999999" blue="0.6371946383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="SRr-5Q-bvB"/>
+                                </constraints>
+                                <state key="normal" title="BUY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="Dkj-JZ-aW8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-bc-ieR" customClass="MDCButton">
+                                <rect key="frame" x="112.5" y="309.5" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.32941176470588235" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="RW2-6C-nnw"/>
+                                </constraints>
+                                <state key="normal" title="SELL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sellButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="E3Z-w3-j5R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mta-sY-Pqf" customClass="MDCButton">
+                                <rect key="frame" x="112.5" y="359.5" width="150" height="48"/>
+                                <color key="backgroundColor" red="0.15155507801102747" green="0.33028735754286165" blue="0.63719463832487311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="QEX-Kn-IAN"/>
+                                </constraints>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="logoutButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="NdS-IS-1gN"/>
                                 </connections>
@@ -107,12 +171,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="mta-sY-Pqf" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" constant="50" id="1Vz-Yc-7RV"/>
+                            <constraint firstItem="YbT-bc-ieR" firstAttribute="centerX" secondItem="1oP-Gc-FSd" secondAttribute="centerX" id="2R9-9X-PhJ"/>
+                            <constraint firstItem="7bR-eU-One" firstAttribute="width" secondItem="g5r-dB-IsF" secondAttribute="width" multiplier="0.4" id="3lQ-lv-OON"/>
+                            <constraint firstItem="mta-sY-Pqf" firstAttribute="width" secondItem="g5r-dB-IsF" secondAttribute="width" multiplier="0.4" id="58d-Ar-oMw"/>
+                            <constraint firstItem="7bR-eU-One" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" constant="-100" id="5GR-tx-6OL"/>
+                            <constraint firstItem="mE9-X5-ZZd" firstAttribute="centerX" secondItem="1oP-Gc-FSd" secondAttribute="centerX" id="9gR-JB-Sl0"/>
                             <constraint firstItem="mta-sY-Pqf" firstAttribute="centerX" secondItem="1oP-Gc-FSd" secondAttribute="centerX" id="GpD-ZV-Ujt"/>
-                            <constraint firstItem="mta-sY-Pqf" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" id="TrU-Rq-9rb"/>
+                            <constraint firstItem="dtj-9u-1VJ" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" constant="-150" id="LoJ-vk-BBO"/>
+                            <constraint firstItem="dtj-9u-1VJ" firstAttribute="centerX" secondItem="1oP-Gc-FSd" secondAttribute="centerX" id="Vua-kh-FJt"/>
+                            <constraint firstItem="YbT-bc-ieR" firstAttribute="width" secondItem="1oP-Gc-FSd" secondAttribute="width" multiplier="0.4" id="edL-WS-Osv"/>
+                            <constraint firstItem="mE9-X5-ZZd" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" constant="-50" id="g4q-sv-gBz"/>
+                            <constraint firstItem="YbT-bc-ieR" firstAttribute="centerY" secondItem="1oP-Gc-FSd" secondAttribute="centerY" id="j3M-WJ-q8d"/>
+                            <constraint firstItem="mE9-X5-ZZd" firstAttribute="width" secondItem="g5r-dB-IsF" secondAttribute="width" multiplier="0.4" id="qEb-ao-H6v"/>
+                            <constraint firstItem="7bR-eU-One" firstAttribute="centerX" secondItem="1oP-Gc-FSd" secondAttribute="centerX" id="s6s-MB-tDm"/>
+                            <constraint firstItem="dtj-9u-1VJ" firstAttribute="width" secondItem="g5r-dB-IsF" secondAttribute="width" multiplier="0.4" id="xqD-QU-udn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g5r-dB-IsF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WCD-xP-KCE"/>
+                    <navigationItem key="navigationItem" title="Money Aju" id="4cs-6t-nKQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggJ-eO-fER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
