@@ -13,7 +13,8 @@
 		4A11A5F8217A9B57008F0231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5F6217A9B57008F0231 /* Main.storyboard */; };
 		4A11A5FA217A9B59008F0231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5F9217A9B59008F0231 /* Assets.xcassets */; };
 		4A11A5FD217A9B59008F0231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5FB217A9B59008F0231 /* LaunchScreen.storyboard */; };
-		4A11A605217A9B75008F0231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A604217A9B75008F0231 /* GoogleService-Info.plist */; };
+		4A4FF2C3217A9D3300DB3626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */; };
+		4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,8 @@
 		4A11A5F9217A9B59008F0231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A11A5FC217A9B59008F0231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A11A5FE217A9B59008F0231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A11A604217A9B75008F0231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseHelper.swift; sourceTree = "<group>"; };
 		5A6719AF6E573B435A1FFCFF /* Pods-MoneyAju.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.debug.xcconfig"; sourceTree = "<group>"; };
 		B2EDFDDD186B073105D4D582 /* Pods-MoneyAju.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.release.xcconfig"; sourceTree = "<group>"; };
 		CBD4DE52684DBC703E647C6D /* Pods_MoneyAju.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyAju.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +71,8 @@
 				4A11A5F9217A9B59008F0231 /* Assets.xcassets */,
 				4A11A5FB217A9B59008F0231 /* LaunchScreen.storyboard */,
 				4A11A5FE217A9B59008F0231 /* Info.plist */,
-				4A11A604217A9B75008F0231 /* GoogleService-Info.plist */,
+				4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */,
+				4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */,
 			);
 			path = MoneyAju;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A11A5FD217A9B59008F0231 /* LaunchScreen.storyboard in Resources */,
-				4A11A605217A9B75008F0231 /* GoogleService-Info.plist in Resources */,
+				4A4FF2C3217A9D3300DB3626 /* GoogleService-Info.plist in Resources */,
 				4A11A5FA217A9B59008F0231 /* Assets.xcassets in Resources */,
 				4A11A5F8217A9B57008F0231 /* Main.storyboard in Resources */,
 			);
@@ -192,14 +195,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A11A5F5217A9B57008F0231 /* ViewController.swift in Sources */,
+				4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */,
 				4A11A5F3217A9B57008F0231 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

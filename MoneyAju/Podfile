@@ -7,5 +7,7 @@ target 'MoneyAju' do
 
   # Pods for MoneyAju
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end
