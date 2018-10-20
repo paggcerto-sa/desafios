@@ -19,19 +19,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var registerButton: MDCButton!
     
     // MARK: Private properties
-    var loginController:MDCTextInputControllerOutlined!
-    var passwordController:MDCTextInputControllerOutlined!
+    private var loginController:MDCTextInputControllerOutlined!
+    private var passwordController:MDCTextInputControllerOutlined!
     
     // MARK: Override functions
     override func viewDidLoad() {
-        if FireBaseHelper.isLogged() {
-            performSegue(withIdentifier: "segueToHome", sender: nil)
-        }
-        
         configureMaterialComponents()
 //        loginTextField.becomeFirstResponder()
         loginTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    
+    // Only for network test. No need of firebase for now.
+    override func viewDidAppear(_ animated: Bool) {
+        self.performSegue(withIdentifier: "segueToHome", sender: nil)
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {

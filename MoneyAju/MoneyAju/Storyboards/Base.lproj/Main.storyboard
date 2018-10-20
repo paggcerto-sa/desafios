@@ -113,7 +113,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="balanceButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="duc-a3-8bl"/>
                                     <segue destination="bTu-zb-LJx" kind="show" id="mxV-FY-uJ1"/>
                                 </connections>
                             </button>
@@ -127,7 +126,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="ratesButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="h8r-XA-MeS"/>
+                                    <segue destination="5BW-8h-4wa" kind="show" id="7QN-BF-ivR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE9-X5-ZZd" customClass="MDCButton">
@@ -139,9 +138,6 @@
                                 <state key="normal" title="BUY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="buyButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="Dkj-JZ-aW8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-bc-ieR" customClass="MDCButton">
                                 <rect key="frame" x="112.5" y="309.5" width="150" height="48"/>
@@ -152,9 +148,6 @@
                                 <state key="normal" title="SELL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="sellButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="E3Z-w3-j5R"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mta-sY-Pqf" customClass="MDCButton">
                                 <rect key="frame" x="112.5" y="359.5" width="150" height="48"/>
@@ -210,6 +203,148 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVV-w8-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3110" y="-187"/>
+        </scene>
+        <!--Rates List View Controller-->
+        <scene sceneID="VWG-E0-qgO">
+            <objects>
+                <viewController id="5BW-8h-4wa" customClass="RatesListViewController" customModule="MoneyAju" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQm-S4-yOS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B39-3H-tvR">
+                                <rect key="frame" x="20" y="84" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY7-VL-gU2">
+                                <rect key="frame" x="205" y="84" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5c-FE-nWh" customClass="MDCButton">
+                                <rect key="frame" x="20" y="115" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose currency">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="currencyButtonTapped:" destination="5BW-8h-4wa" eventType="touchUpInside" id="Wxo-bU-7zK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYg-ph-7ZR">
+                                <rect key="frame" x="20" y="285" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="37d-kn-ePJ">
+                                <rect key="frame" x="20" y="311" width="335" height="351"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatesTableViewCell" id="Lr0-UE-9KU" customClass="RatesTableViewCell" customModule="MoneyAju" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lr0-UE-9KU" id="fXs-tk-gKH">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-uI-0PZ">
+                                                    <rect key="frame" x="15" y="11.5" width="134" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ww0-QN-K1u">
+                                                    <rect key="frame" x="169.5" y="11.5" width="150.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ww0-QN-K1u" secondAttribute="trailing" id="IrN-Wc-Oq1"/>
+                                                <constraint firstItem="Ww0-QN-K1u" firstAttribute="centerY" secondItem="fXs-tk-gKH" secondAttribute="centerY" id="S2D-G4-KSL"/>
+                                                <constraint firstItem="Ww0-QN-K1u" firstAttribute="width" secondItem="fXs-tk-gKH" secondAttribute="width" multiplier="0.45" id="Spw-p7-j9F"/>
+                                                <constraint firstItem="uaQ-uI-0PZ" firstAttribute="width" secondItem="fXs-tk-gKH" secondAttribute="width" multiplier="0.4" id="V3p-1e-beh"/>
+                                                <constraint firstItem="uaQ-uI-0PZ" firstAttribute="leading" secondItem="fXs-tk-gKH" secondAttribute="leadingMargin" id="atA-Fa-mR9"/>
+                                                <constraint firstItem="uaQ-uI-0PZ" firstAttribute="centerY" secondItem="fXs-tk-gKH" secondAttribute="centerY" id="d4j-Ng-mFe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="uaQ-uI-0PZ" id="VMC-gB-2rh"/>
+                                            <outlet property="valueLabel" destination="Ww0-QN-K1u" id="SmU-3W-WMh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzr-aQ-wYj" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="155" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwI-9S-brZ" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="195" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDF-Ef-57u" customClass="MDCButton">
+                                <rect key="frame" x="20" y="240" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getHistoryButtonTapped:" destination="5BW-8h-4wa" eventType="touchUpInside" id="qUB-mB-Bzw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B39-3H-tvR" firstAttribute="top" secondItem="GX0-It-AJb" secondAttribute="top" constant="20" id="6hk-Dv-FPD"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="mwI-9S-brZ" secondAttribute="trailing" constant="20" id="7cy-GQ-bQf"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="LYg-ph-7ZR" secondAttribute="trailing" constant="20" id="9JP-GL-AkT"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="wDF-Ef-57u" secondAttribute="trailing" constant="20" id="A19-Ia-Rco"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="37d-kn-ePJ" secondAttribute="trailing" constant="20" id="BmW-PR-rsg"/>
+                            <constraint firstItem="B39-3H-tvR" firstAttribute="width" secondItem="GX0-It-AJb" secondAttribute="width" multiplier="0.4" id="Lj4-ev-szr"/>
+                            <constraint firstItem="LYg-ph-7ZR" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="Mjr-Is-IWy"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="fY7-VL-gU2" secondAttribute="trailing" constant="20" id="NdN-cs-Gm3"/>
+                            <constraint firstItem="b5c-FE-nWh" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="RzC-gg-NgT"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="bottom" secondItem="37d-kn-ePJ" secondAttribute="bottom" constant="5" id="TUV-YO-ajJ"/>
+                            <constraint firstItem="37d-kn-ePJ" firstAttribute="top" secondItem="LYg-ph-7ZR" secondAttribute="bottom" constant="5" id="X3t-R4-5bO"/>
+                            <constraint firstItem="Dzr-aQ-wYj" firstAttribute="top" secondItem="b5c-FE-nWh" secondAttribute="bottom" constant="10" id="ZG8-FB-1YX"/>
+                            <constraint firstItem="Dzr-aQ-wYj" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="Zrd-Yn-qt6"/>
+                            <constraint firstItem="mwI-9S-brZ" firstAttribute="top" secondItem="Dzr-aQ-wYj" secondAttribute="bottom" constant="10" id="aMC-4g-noc"/>
+                            <constraint firstItem="wDF-Ef-57u" firstAttribute="top" secondItem="mwI-9S-brZ" secondAttribute="bottom" constant="15" id="cnd-mG-TFF"/>
+                            <constraint firstItem="B39-3H-tvR" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="g8f-pA-mfc"/>
+                            <constraint firstItem="37d-kn-ePJ" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="gue-Ga-sVJ"/>
+                            <constraint firstItem="fY7-VL-gU2" firstAttribute="top" secondItem="GX0-It-AJb" secondAttribute="top" constant="20" id="jQg-NJ-nfn"/>
+                            <constraint firstItem="mwI-9S-brZ" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="kqy-hW-aLz"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="Dzr-aQ-wYj" secondAttribute="trailing" constant="20" id="oo5-km-Amq"/>
+                            <constraint firstItem="b5c-FE-nWh" firstAttribute="top" secondItem="B39-3H-tvR" secondAttribute="bottom" constant="10" id="rxg-nM-lDG"/>
+                            <constraint firstItem="LYg-ph-7ZR" firstAttribute="top" secondItem="wDF-Ef-57u" secondAttribute="bottom" constant="15" id="taX-02-Rd0"/>
+                            <constraint firstItem="GX0-It-AJb" firstAttribute="trailing" secondItem="b5c-FE-nWh" secondAttribute="trailing" constant="20" id="u1h-xR-kcf"/>
+                            <constraint firstItem="wDF-Ef-57u" firstAttribute="leading" secondItem="GX0-It-AJb" secondAttribute="leading" constant="20" id="xhh-f2-5fo"/>
+                            <constraint firstItem="fY7-VL-gU2" firstAttribute="width" secondItem="GX0-It-AJb" secondAttribute="width" multiplier="0.4" id="zUV-ew-2x7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GX0-It-AJb"/>
+                    </view>
+                    <connections>
+                        <outlet property="currencyButton" destination="b5c-FE-nWh" id="gMe-11-9bZ"/>
+                        <outlet property="currencyLabel" destination="fY7-VL-gU2" id="yi4-YH-eEF"/>
+                        <outlet property="fromDateTextField" destination="Dzr-aQ-wYj" id="Vjc-Zq-vYT"/>
+                        <outlet property="getHistoryButton" destination="wDF-Ef-57u" id="w2h-74-b1U"/>
+                        <outlet property="resultTableView" destination="37d-kn-ePJ" id="SGD-ZQ-Asx"/>
+                        <outlet property="toDateTextField" destination="mwI-9S-brZ" id="uBn-3n-Cha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYb-4a-3Qo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3101.5999999999999" y="478.11094452773619"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gMP-zH-pSr">
