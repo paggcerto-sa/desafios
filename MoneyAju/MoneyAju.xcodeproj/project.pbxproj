@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		42C8B1E6B8D451D2F8E68D1F /* Pods_MoneyAju.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD4DE52684DBC703E647C6D /* Pods_MoneyAju.framework */; };
+		4A015D9A217AD3AB0061C7E2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A015D99217AD3AB0061C7E2 /* UIViewControllerExtensions.swift */; };
 		4A11A5F3217A9B57008F0231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11A5F2217A9B57008F0231 /* AppDelegate.swift */; };
-		4A11A5F5217A9B57008F0231 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A11A5F4217A9B57008F0231 /* ViewController.swift */; };
 		4A11A5F8217A9B57008F0231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5F6217A9B57008F0231 /* Main.storyboard */; };
 		4A11A5FA217A9B59008F0231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5F9217A9B59008F0231 /* Assets.xcassets */; };
 		4A11A5FD217A9B59008F0231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A11A5FB217A9B59008F0231 /* LaunchScreen.storyboard */; };
+		4A20F6D0217AC49800B783D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20F6CF217AC49800B783D9 /* LoginViewController.swift */; };
 		4A4FF2C3217A9D3300DB3626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */; };
 		4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */; };
+		4AE82E6A217AD08A004F55E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE82E69217AD08A004F55E4 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A015D99217AD3AB0061C7E2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		4A11A5EF217A9B57008F0231 /* MoneyAju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyAju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A11A5F2217A9B57008F0231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A11A5F4217A9B57008F0231 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A11A5F7217A9B57008F0231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A11A5F9217A9B59008F0231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A11A5FC217A9B59008F0231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A11A5FE217A9B59008F0231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A20F6CF217AC49800B783D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseHelper.swift; sourceTree = "<group>"; };
+		4AE82E69217AD08A004F55E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5A6719AF6E573B435A1FFCFF /* Pods-MoneyAju.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.debug.xcconfig"; sourceTree = "<group>"; };
 		B2EDFDDD186B073105D4D582 /* Pods-MoneyAju.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyAju.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju.release.xcconfig"; sourceTree = "<group>"; };
 		CBD4DE52684DBC703E647C6D /* Pods_MoneyAju.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyAju.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,16 +69,42 @@
 		4A11A5F1217A9B57008F0231 /* MoneyAju */ = {
 			isa = PBXGroup;
 			children = (
+				4AE82E68217AD02E004F55E4 /* Helpers And Extensions */,
+				4AE82E67217AD019004F55E4 /* Storyboards */,
+				4AE82E66217AD005004F55E4 /* View Controllers */,
 				4A11A5F2217A9B57008F0231 /* AppDelegate.swift */,
-				4A11A5F4217A9B57008F0231 /* ViewController.swift */,
-				4A11A5F6217A9B57008F0231 /* Main.storyboard */,
 				4A11A5F9217A9B59008F0231 /* Assets.xcassets */,
-				4A11A5FB217A9B59008F0231 /* LaunchScreen.storyboard */,
 				4A11A5FE217A9B59008F0231 /* Info.plist */,
 				4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */,
-				4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */,
 			);
 			path = MoneyAju;
+			sourceTree = "<group>";
+		};
+		4AE82E66217AD005004F55E4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A20F6CF217AC49800B783D9 /* LoginViewController.swift */,
+				4AE82E69217AD08A004F55E4 /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4AE82E67217AD019004F55E4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4A11A5F6217A9B57008F0231 /* Main.storyboard */,
+				4A11A5FB217A9B59008F0231 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4AE82E68217AD02E004F55E4 /* Helpers And Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */,
+				4A015D99217AD3AB0061C7E2 /* UIViewControllerExtensions.swift */,
+			);
+			path = "Helpers And Extensions";
 			sourceTree = "<group>";
 		};
 		B1D2E0881AF6F74AE7A1D5AB /* Pods */ = {
@@ -197,6 +227,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyAju/Pods-MoneyAju-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -206,6 +242,12 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -221,9 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A11A5F5217A9B57008F0231 /* ViewController.swift in Sources */,
+				4A20F6D0217AC49800B783D9 /* LoginViewController.swift in Sources */,
 				4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */,
+				4A015D9A217AD3AB0061C7E2 /* UIViewControllerExtensions.swift in Sources */,
 				4A11A5F3217A9B57008F0231 /* AppDelegate.swift in Sources */,
+				4AE82E6A217AD08A004F55E4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
