@@ -11,6 +11,11 @@ import MaterialComponents
 
 class HomeViewController: UIViewController {
     
+    // MARK: Override functions
+    override func viewDidLoad() {
+        hideNextTitleButtonNavBar()
+    }
+    
     // MARK: IBActions
     @IBAction func balanceButtonTapped(_ sender: Any) {
     }

@@ -10,5 +10,7 @@ target 'MoneyAju' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'MaterialComponents'
+  pod 'ObjectMapper'
+  pod 'Alamofire'
 
 end

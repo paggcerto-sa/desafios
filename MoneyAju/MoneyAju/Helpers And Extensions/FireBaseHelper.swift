@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 import FirebaseDatabase
+import ObjectMapper
 
 class FireBaseHelper {
     public static func register(email:String, password:String, onCompletion:@escaping ((Bool) -> Void)) {
@@ -46,12 +47,17 @@ class FireBaseHelper {
         postRef.setValue(novoValor)
     }
     
-    public static func getBalances(onCompletion:@escaping ((NSDictionary?) -> Void)) {
+    public static func getBalances(onCompletion:@escaping (([String : Balance]?) -> Void)) {
         let userID = Auth.auth().currentUser?.uid
         var ref: DatabaseReference!
         ref = Database.database().reference()
-        ref.child("accounts").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            onCompletion(snapshot.value as? NSDictionary)
+        ref.child("accounts").child(userID!).child("balances").observeSingleEvent(of: .value, with: { (snapshot) in
+            if let arrayItens = snapshot.value as? NSDictionary {
+                let balances = Mapper<Balance>().mapDictionary(JSON: arrayItens as! [String : [String : Any]])
+                onCompletion(balances)
+            } else {
+                onCompletion(nil)
+            }
         }) { (error) in
             print(error.localizedDescription)
             onCompletion(nil)

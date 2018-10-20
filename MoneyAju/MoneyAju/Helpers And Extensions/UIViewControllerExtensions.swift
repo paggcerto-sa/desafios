@@ -17,4 +17,9 @@ extension UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (_) in }))
         present(alert, animated: true, completion: nil)
     }
+    
+    // Remove back button item text keeping the icon
+    func hideNextTitleButtonNavBar() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
 }

@@ -114,6 +114,7 @@
                                 </state>
                                 <connections>
                                     <action selector="balanceButtonTapped:" destination="Zz4-zo-e7M" eventType="touchUpInside" id="duc-a3-8bl"/>
+                                    <segue destination="bTu-zb-LJx" kind="show" id="mxV-FY-uJ1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bR-eU-One" customClass="MDCButton">
@@ -194,6 +195,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggJ-eO-fER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1956" y="42.728635682158924"/>
+        </scene>
+        <!--Balance View Controller-->
+        <scene sceneID="lWn-f9-Q5F">
+            <objects>
+                <viewController id="bTu-zb-LJx" customClass="BalanceViewController" customModule="MoneyAju" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cpX-ba-aU0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JrG-rh-KpU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVV-w8-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3110" y="-187"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gMP-zH-pSr">

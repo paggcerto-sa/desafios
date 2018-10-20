@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         
         configureMaterialComponents()
-        loginTextField.becomeFirstResponder()
+//        loginTextField.becomeFirstResponder()
         loginTextField.delegate = self
         passwordTextField.delegate = self
     }
