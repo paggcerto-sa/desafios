@@ -23,8 +23,7 @@ class BuyViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Override functions
     override func viewDidLoad() {
-        configureMaterialComponents()
-        valueTextField.delegate = self
+        configureUI()
         
         //--- add UIToolBar on keyboard and Done button on UIToolBar ---//
         // Get this code in https://gist.github.com/jplazcano87/8b5d3bc89c3578e45c3e
@@ -51,7 +50,10 @@ class BuyViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Private functions
-    private func configureMaterialComponents(){
+    private func configureUI(){
+        title = "Money Aju"
+        navigationController?.navigationBar.tintColor = UIColor.black
+        valueTextField.delegate = self
         valueController = MDCTextInputControllerOutlined(textInput: valueTextField)
     }
     

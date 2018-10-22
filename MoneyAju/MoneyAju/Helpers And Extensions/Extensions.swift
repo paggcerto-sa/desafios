@@ -12,9 +12,13 @@ import UIKit
 extension UIViewController {
     
     // Show alert with given message
-    func showAlert(message:String){
+    func showAlert(message:String, viewToDismiss:UIViewController? = nil){
         let alert:UIAlertController = UIAlertController(title: "Warning!", message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (_) in }))
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (_) in
+            if viewToDismiss != nil {
+                viewToDismiss?.navigationController?.popViewController(animated: true)
+            }
+        }))
         present(alert, animated: true, completion: nil)
     }
     

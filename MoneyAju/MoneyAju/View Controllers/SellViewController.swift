@@ -25,8 +25,7 @@ class SellViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Override functions
     override func viewDidLoad() {
-        configureMaterialComponents()
-        valueTextField.delegate = self
+        configureUI()
         
         //--- add UIToolBar on keyboard and Done button on UIToolBar ---//
         // Get this code in https://gist.github.com/jplazcano87/8b5d3bc89c3578e45c3e
@@ -54,7 +53,10 @@ class SellViewController: UIViewController, UITextFieldDelegate {
     
     
     // MARK: Private functions
-    private func configureMaterialComponents(){
+    private func configureUI(){
+        title = "Money Aju"
+        navigationController?.navigationBar.tintColor = UIColor.black
+        valueTextField.delegate = self
         valueController = MDCTextInputControllerOutlined(textInput: valueTextField)
     }
     
@@ -98,7 +100,11 @@ class SellViewController: UIViewController, UITextFieldDelegate {
                             }
                         }
                         
-                        self.currencyLabel.text = self.rates[0].currency
+                        if self.rates.count > 0 {
+                            self.currencyLabel.text = self.rates[0].currency
+                        } else {
+                            self.showAlert(message: "You have to buy some money first.", viewToDismiss: self)
+                        }
                         
                     } else {
                         self.showAlert(message: "Error geting rates")

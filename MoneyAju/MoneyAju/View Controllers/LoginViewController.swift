@@ -36,11 +36,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             UIApplication.shared.isNetworkActivityIndicatorVisible = true
             FireBaseHelper.login(email: loginTextField.text!, password: passwordTextField.text!) { (logged) in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                self.setButtonsEnabled(true)
                 if logged {
                     self.performSegue(withIdentifier: "segueToHome", sender: nil)
                 } else {
                     self.showAlert(message: "Login error.")
-                    self.setButtonsEnabled(true)
                 }
             }
         }

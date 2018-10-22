@@ -202,9 +202,88 @@
                     <view key="view" contentMode="scaleToFill" id="cpX-ba-aU0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRG-nR-L8k">
+                                <rect key="frame" x="20" y="84" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Su3-Bf-Kbk">
+                                <rect key="frame" x="20" y="115" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balances:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uo3-4p-pxT">
+                                <rect key="frame" x="20" y="166" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-Au-JFp">
+                                <rect key="frame" x="20" y="202" width="335" height="445"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BalanceTableViewCell" id="LFU-hQ-7VR" customClass="BalanceTableViewCell" customModule="MoneyAju" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LFU-hQ-7VR" id="L2s-qh-jhh">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="61.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bax-t3-fIk">
+                                                    <rect key="frame" x="35" y="20.5" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrP-cq-gFB">
+                                                    <rect key="frame" x="166" y="20.5" width="134" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bax-t3-fIk" firstAttribute="width" secondItem="L2s-qh-jhh" secondAttribute="width" multiplier="0.25" id="0kG-ip-5hV"/>
+                                                <constraint firstItem="bax-t3-fIk" firstAttribute="centerY" secondItem="L2s-qh-jhh" secondAttribute="centerY" id="1te-XT-kKb"/>
+                                                <constraint firstItem="SrP-cq-gFB" firstAttribute="centerY" secondItem="L2s-qh-jhh" secondAttribute="centerY" id="3Uh-iY-Msa"/>
+                                                <constraint firstItem="bax-t3-fIk" firstAttribute="leading" secondItem="L2s-qh-jhh" secondAttribute="leadingMargin" constant="20" id="Lck-3K-Yew"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SrP-cq-gFB" secondAttribute="trailing" constant="20" id="SBU-Q7-LPg"/>
+                                                <constraint firstItem="SrP-cq-gFB" firstAttribute="width" secondItem="L2s-qh-jhh" secondAttribute="width" multiplier="0.4" id="rb6-YY-XeH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="balanceLabel" destination="bax-t3-fIk" id="AT7-1c-i3T"/>
+                                            <outlet property="valueLabel" destination="SrP-cq-gFB" id="1KT-mF-t0l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lRG-nR-L8k" firstAttribute="top" secondItem="JrG-rh-KpU" secondAttribute="top" constant="20" id="0Y6-MA-ZxX"/>
+                            <constraint firstItem="Su3-Bf-Kbk" firstAttribute="top" secondItem="lRG-nR-L8k" secondAttribute="bottom" constant="10" id="44m-EU-zJd"/>
+                            <constraint firstItem="Su3-Bf-Kbk" firstAttribute="leading" secondItem="JrG-rh-KpU" secondAttribute="leading" constant="20" id="FN8-LT-cA7"/>
+                            <constraint firstItem="JrG-rh-KpU" firstAttribute="bottom" secondItem="O6K-Au-JFp" secondAttribute="bottom" constant="20" id="IRf-MS-K04"/>
+                            <constraint firstItem="JrG-rh-KpU" firstAttribute="trailing" secondItem="lRG-nR-L8k" secondAttribute="trailing" constant="20" id="JnQ-6K-nrS"/>
+                            <constraint firstItem="JrG-rh-KpU" firstAttribute="trailing" secondItem="Su3-Bf-Kbk" secondAttribute="trailing" constant="20" id="MLA-9p-nC1"/>
+                            <constraint firstItem="JrG-rh-KpU" firstAttribute="trailing" secondItem="O6K-Au-JFp" secondAttribute="trailing" constant="20" id="VzH-mM-5PQ"/>
+                            <constraint firstItem="uo3-4p-pxT" firstAttribute="leading" secondItem="JrG-rh-KpU" secondAttribute="leading" constant="20" id="Wvm-zB-nCW"/>
+                            <constraint firstItem="O6K-Au-JFp" firstAttribute="top" secondItem="uo3-4p-pxT" secondAttribute="bottom" constant="15" id="Ygw-CZ-nnG"/>
+                            <constraint firstItem="uo3-4p-pxT" firstAttribute="top" secondItem="Su3-Bf-Kbk" secondAttribute="bottom" constant="30" id="eda-3R-aH3"/>
+                            <constraint firstItem="lRG-nR-L8k" firstAttribute="leading" secondItem="JrG-rh-KpU" secondAttribute="leading" constant="20" id="gv6-Pl-uxo"/>
+                            <constraint firstItem="JrG-rh-KpU" firstAttribute="trailing" secondItem="uo3-4p-pxT" secondAttribute="trailing" constant="20" id="rST-Xf-HRa"/>
+                            <constraint firstItem="O6K-Au-JFp" firstAttribute="leading" secondItem="JrG-rh-KpU" secondAttribute="leading" constant="20" id="s0K-FC-o9m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JrG-rh-KpU"/>
                     </view>
+                    <connections>
+                        <outlet property="balancesTableView" destination="O6K-Au-JFp" id="w7t-He-dZG"/>
+                        <outlet property="brlTotalLabel" destination="Su3-Bf-Kbk" id="P1p-2s-IJo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVV-w8-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
