@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Override functions
     override func viewDidLoad() {
         configureMaterialComponents()
-//        loginTextField.becomeFirstResponder()
+        loginTextField.becomeFirstResponder()
         loginTextField.delegate = self
         passwordTextField.delegate = self
     }

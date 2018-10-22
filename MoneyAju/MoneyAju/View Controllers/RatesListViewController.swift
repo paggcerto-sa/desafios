@@ -37,6 +37,14 @@ class RatesListViewController:UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func getHistoryButtonTapped(_ sender: Any) {
+        if
+            !fromDateTextField.text!.matches("([0-9]){4}-([0-9]){2}-([0-9]){2}")
+                ||
+            !toDateTextField.text!.matches("([0-9]){4}-([0-9]){2}-([0-9]){2}")
+        {
+            showAlert(message: "Use date as yyyy-mm-dd")
+            return
+        }
         setLoading(true)
         NetworkHelper.getCurrencyHistory(currency: currencyLabel.text!, fromDate: fromDateTextField.text!, toDate: toDateTextField.text!) { (rateHistoryArray) in
             if rateHistoryArray != nil {
@@ -68,6 +76,9 @@ class RatesListViewController:UIViewController, UITableViewDelegate, UITableView
         NetworkHelper.getCurrencyList { (rates) in
             if rates != nil {
                 self.rates = rates!
+                if self.rates.count > 0 {
+                    self.currencyLabel.text = self.rates[0].currency
+                }
             }
             self.setLoading(false)
         }
