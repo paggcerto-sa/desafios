@@ -254,7 +254,7 @@ class PickerDialog: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
             let selectedValue = self.pickerData[selectedIndex]["value"]
             self.callback?(selectedValue!)
         }else{
-            self.onCancelTapped!()
+            self.onCancelTapped?()
         }
         
         close()

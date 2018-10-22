@@ -138,6 +138,9 @@
                                 <state key="normal" title="BUY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nrt-nD-ogf" kind="show" id="7ys-4h-cNi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbT-bc-ieR" customClass="MDCButton">
                                 <rect key="frame" x="112.5" y="309.5" width="150" height="48"/>
@@ -148,6 +151,9 @@
                                 <state key="normal" title="SELL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a2l-0e-15q" kind="show" id="RXc-B2-Yb4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mta-sY-Pqf" customClass="MDCButton">
                                 <rect key="frame" x="112.5" y="359.5" width="150" height="48"/>
@@ -187,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggJ-eO-fER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="42.728635682158924"/>
+            <point key="canvasLocation" x="1975" y="43"/>
         </scene>
         <!--Balance View Controller-->
         <scene sceneID="lWn-f9-Q5F">
@@ -202,7 +208,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVV-w8-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3110" y="-187"/>
+            <point key="canvasLocation" x="1062" y="811"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="18i-vc-txD">
+            <objects>
+                <viewController id="nrt-nD-ogf" customClass="BuyViewController" customModule="MoneyAju" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Re3-KI-zTe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-vK-pJr">
+                                <rect key="frame" x="20" y="84" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUq-AQ-eBd">
+                                <rect key="frame" x="242.5" y="84" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocs-Zn-9O6" customClass="MDCButton">
+                                <rect key="frame" x="20" y="115" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose currency">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="currencyButtonTapped:" destination="nrt-nD-ogf" eventType="touchUpInside" id="htW-e0-zo2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dFZ-Nf-PfS" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="165" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-NS-Zff" customClass="MDCButton">
+                                <rect key="frame" x="20" y="225" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="BUY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonTapped:" destination="nrt-nD-ogf" eventType="touchUpInside" id="7RU-WJ-iYE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zHX-7C-t7V" firstAttribute="trailing" secondItem="zV6-NS-Zff" secondAttribute="trailing" constant="20" id="5Bf-HF-a78"/>
+                            <constraint firstItem="zV6-NS-Zff" firstAttribute="top" secondItem="dFZ-Nf-PfS" secondAttribute="bottom" constant="30" id="5pV-Og-BPd"/>
+                            <constraint firstItem="dFZ-Nf-PfS" firstAttribute="top" secondItem="Ocs-Zn-9O6" secondAttribute="bottom" constant="20" id="G7a-Ik-iyq"/>
+                            <constraint firstItem="zHX-7C-t7V" firstAttribute="trailing" secondItem="dFZ-Nf-PfS" secondAttribute="trailing" constant="20" id="HPG-eq-P4h"/>
+                            <constraint firstItem="zHX-7C-t7V" firstAttribute="trailing" secondItem="pUq-AQ-eBd" secondAttribute="trailing" constant="20" id="J98-qc-nC7"/>
+                            <constraint firstItem="h7i-vK-pJr" firstAttribute="leading" secondItem="zHX-7C-t7V" secondAttribute="leading" constant="20" id="RKk-L6-w52"/>
+                            <constraint firstItem="Ocs-Zn-9O6" firstAttribute="top" secondItem="h7i-vK-pJr" secondAttribute="bottom" constant="10" id="ega-7b-6rK"/>
+                            <constraint firstItem="Ocs-Zn-9O6" firstAttribute="leading" secondItem="zHX-7C-t7V" secondAttribute="leading" constant="20" id="h14-Ef-F8E"/>
+                            <constraint firstItem="h7i-vK-pJr" firstAttribute="top" secondItem="zHX-7C-t7V" secondAttribute="top" constant="20" id="hWr-9E-til"/>
+                            <constraint firstItem="pUq-AQ-eBd" firstAttribute="top" secondItem="zHX-7C-t7V" secondAttribute="top" constant="20" id="mJo-Zc-Xqc"/>
+                            <constraint firstItem="h7i-vK-pJr" firstAttribute="width" secondItem="zHX-7C-t7V" secondAttribute="width" multiplier="0.3" id="mbg-Q2-Gab"/>
+                            <constraint firstItem="zHX-7C-t7V" firstAttribute="trailing" secondItem="Ocs-Zn-9O6" secondAttribute="trailing" constant="20" id="nDy-mD-GB0"/>
+                            <constraint firstItem="pUq-AQ-eBd" firstAttribute="width" secondItem="zHX-7C-t7V" secondAttribute="width" multiplier="0.3" id="ngl-oz-Obz"/>
+                            <constraint firstItem="zV6-NS-Zff" firstAttribute="leading" secondItem="zHX-7C-t7V" secondAttribute="leading" constant="20" id="qQo-oh-Kdj"/>
+                            <constraint firstItem="dFZ-Nf-PfS" firstAttribute="leading" secondItem="zHX-7C-t7V" secondAttribute="leading" constant="20" id="zv2-0R-mw8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zHX-7C-t7V"/>
+                    </view>
+                    <connections>
+                        <outlet property="buyButton" destination="zV6-NS-Zff" id="HJe-Ug-6zr"/>
+                        <outlet property="currencyButton" destination="Ocs-Zn-9O6" id="Tlk-Fy-oeI"/>
+                        <outlet property="currencyLabel" destination="pUq-AQ-eBd" id="CpY-2z-Dvf"/>
+                        <outlet property="valueTextField" destination="dFZ-Nf-PfS" id="Ipe-aB-yHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lPd-ns-TAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="811"/>
         </scene>
         <!--Rates List View Controller-->
         <scene sceneID="VWG-E0-qgO">
@@ -344,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYb-4a-3Qo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3101.5999999999999" y="478.11094452773619"/>
+            <point key="canvasLocation" x="1674" y="811"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gMP-zH-pSr">
@@ -363,6 +447,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwO-cq-ydI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1016.8" y="42.728635682158924"/>
+        </scene>
+        <!--Sell View Controller-->
+        <scene sceneID="aOM-t4-fpb">
+            <objects>
+                <viewController id="a2l-0e-15q" customClass="SellViewController" customModule="MoneyAju" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXl-cG-iVw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzX-2j-L9D">
+                                <rect key="frame" x="20" y="84" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRL" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHI-Va-ncr">
+                                <rect key="frame" x="242.5" y="84" width="112.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjj-Qt-lNg" customClass="MDCButton">
+                                <rect key="frame" x="20" y="115" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose currency">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="currencyButtonTapped:" destination="a2l-0e-15q" eventType="touchUpInside" id="0VG-Ne-hvP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-Oe-mwh" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="165" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBx-kb-D6o" customClass="MDCButton">
+                                <rect key="frame" x="20" y="225" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SELL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sellButtonTapped:" destination="a2l-0e-15q" eventType="touchUpInside" id="ft8-1r-bG8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2oK-Vs-M2o" firstAttribute="trailing" secondItem="uHI-Va-ncr" secondAttribute="trailing" constant="20" id="4wO-AY-iBY"/>
+                            <constraint firstItem="2oK-Vs-M2o" firstAttribute="trailing" secondItem="3eN-Oe-mwh" secondAttribute="trailing" constant="20" id="6xv-dN-dow"/>
+                            <constraint firstItem="uHI-Va-ncr" firstAttribute="top" secondItem="2oK-Vs-M2o" secondAttribute="top" constant="20" id="8Pn-U8-ZgI"/>
+                            <constraint firstItem="2oK-Vs-M2o" firstAttribute="trailing" secondItem="mjj-Qt-lNg" secondAttribute="trailing" constant="20" id="Dr8-X8-jBP"/>
+                            <constraint firstItem="KzX-2j-L9D" firstAttribute="leading" secondItem="2oK-Vs-M2o" secondAttribute="leading" constant="20" id="HKM-dd-ptB"/>
+                            <constraint firstItem="KzX-2j-L9D" firstAttribute="top" secondItem="2oK-Vs-M2o" secondAttribute="top" constant="20" id="Lwc-BM-8Sl"/>
+                            <constraint firstItem="KzX-2j-L9D" firstAttribute="width" secondItem="2oK-Vs-M2o" secondAttribute="width" multiplier="0.3" id="Pn2-A4-fED"/>
+                            <constraint firstItem="uHI-Va-ncr" firstAttribute="width" secondItem="2oK-Vs-M2o" secondAttribute="width" multiplier="0.3" id="XiI-iI-8fo"/>
+                            <constraint firstItem="3eN-Oe-mwh" firstAttribute="leading" secondItem="2oK-Vs-M2o" secondAttribute="leading" constant="20" id="ZdV-CK-ngV"/>
+                            <constraint firstItem="vBx-kb-D6o" firstAttribute="top" secondItem="3eN-Oe-mwh" secondAttribute="bottom" constant="30" id="lXu-0g-YGw"/>
+                            <constraint firstItem="vBx-kb-D6o" firstAttribute="leading" secondItem="2oK-Vs-M2o" secondAttribute="leading" constant="20" id="pTQ-he-rh7"/>
+                            <constraint firstItem="3eN-Oe-mwh" firstAttribute="top" secondItem="mjj-Qt-lNg" secondAttribute="bottom" constant="20" id="rfb-Sk-Yjz"/>
+                            <constraint firstItem="2oK-Vs-M2o" firstAttribute="trailing" secondItem="vBx-kb-D6o" secondAttribute="trailing" constant="20" id="tgB-np-WKf"/>
+                            <constraint firstItem="mjj-Qt-lNg" firstAttribute="leading" secondItem="2oK-Vs-M2o" secondAttribute="leading" constant="20" id="uYB-DP-ynH"/>
+                            <constraint firstItem="mjj-Qt-lNg" firstAttribute="top" secondItem="KzX-2j-L9D" secondAttribute="bottom" constant="10" id="vDH-Jg-AVP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2oK-Vs-M2o"/>
+                    </view>
+                    <connections>
+                        <outlet property="currencyButton" destination="mjj-Qt-lNg" id="iyj-wN-Lmw"/>
+                        <outlet property="currencyLabel" destination="uHI-Va-ncr" id="W5Q-mI-bkJ"/>
+                        <outlet property="sellButton" destination="vBx-kb-D6o" id="xhF-d9-iTo"/>
+                        <outlet property="valueTextField" destination="3eN-Oe-mwh" id="0ri-eY-40g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ofk-W9-JWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="811"/>
         </scene>
     </scenes>
 </document>

@@ -20,6 +20,8 @@
 		4A49D544217AE1E700F04675 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A49D543217AE1E700F04675 /* Balance.swift */; };
 		4A4FF2C3217A9D3300DB3626 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */; };
 		4A4FF2C5217ABB9800DB3626 /* FireBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */; };
+		4AB14814217D4151007B445C /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB14813217D4151007B445C /* BuyViewController.swift */; };
+		4AB14816217D4186007B445C /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB14815217D4186007B445C /* SellViewController.swift */; };
 		4AE82E6A217AD08A004F55E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE82E69217AD08A004F55E4 /* HomeViewController.swift */; };
 		4AF64AF2217B7C6400DECA70 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF64AF1217B7C6400DECA70 /* Rates.swift */; };
 		4AF64AF4217B962D00DECA70 /* PickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF64AF3217B962D00DECA70 /* PickerDialog.swift */; };
@@ -41,6 +43,8 @@
 		4A49D543217AE1E700F04675 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		4A4FF2C2217A9D3300DB3626 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A4FF2C4217ABB9800DB3626 /* FireBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseHelper.swift; sourceTree = "<group>"; };
+		4AB14813217D4151007B445C /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		4AB14815217D4186007B445C /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		4AE82E69217AD08A004F55E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4AF64AF1217B7C6400DECA70 /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		4AF64AF3217B962D00DECA70 /* PickerDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDialog.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				4AE82E69217AD08A004F55E4 /* HomeViewController.swift */,
 				4A015D9B217AE0450061C7E2 /* BalanceViewController.swift */,
 				4A3DB095217AF07300299D20 /* RatesListViewController.swift */,
+				4AB14813217D4151007B445C /* BuyViewController.swift */,
+				4AB14815217D4186007B445C /* SellViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB14816217D4186007B445C /* SellViewController.swift in Sources */,
 				4AF64AF6217BA5B300DECA70 /* Wallet.swift in Sources */,
 				4A3DB094217AEF7100299D20 /* NetworkHelper.swift in Sources */,
 				4A20F6D0217AC49800B783D9 /* LoginViewController.swift in Sources */,
@@ -307,6 +314,7 @@
 				4A3DB096217AF07300299D20 /* RatesListViewController.swift in Sources */,
 				4A11A5F3217A9B57008F0231 /* AppDelegate.swift in Sources */,
 				4AE82E6A217AD08A004F55E4 /* HomeViewController.swift in Sources */,
+				4AB14814217D4151007B445C /* BuyViewController.swift in Sources */,
 				4A49D544217AE1E700F04675 /* Balance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

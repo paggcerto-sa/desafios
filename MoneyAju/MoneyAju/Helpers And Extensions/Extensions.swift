@@ -13,7 +13,7 @@ extension UIViewController {
     
     // Show alert with given message
     func showAlert(message:String){
-        let alert:UIAlertController = UIAlertController(title: "Atenção!", message: message, preferredStyle: UIAlertController.Style.alert)
+        let alert:UIAlertController = UIAlertController(title: "Warning!", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (_) in }))
         present(alert, animated: true, completion: nil)
     }
