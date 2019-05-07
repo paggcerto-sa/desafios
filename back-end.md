@@ -25,7 +25,7 @@ Para cada transação são cobrados R$ 0,90 (independente do número de parcelas
 
 ## Solicitação de antecipação
 
-Solicitações de antecipação são documentos emitidos pelo lojista/prestador através do nosso serviço. A antecipação de uma transação tem um custo de 3.8% calculado sobre cada parcela que, por sua vez, é automaticamente debitado no seu repasse. Para controle dessas solicitações são mantidas as seguintes informações:
+Solicitações de antecipação são documentos emitidos pelo lojista/prestador através do nosso serviço. A antecipação de uma transação tem um custo de 3.8% por parcela (ex: 1x -> 3,8%, 2x -> 3,8 * 2 = 7,6%), sendo automaticamente debitado no seu repasse. Para controle dessas solicitações são mantidas as seguintes informações:
 
 - Data da solicitação;
 - Data da análise (quando iniciou e quando terminou);
