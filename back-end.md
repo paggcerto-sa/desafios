@@ -34,10 +34,10 @@ Toda transação aprovada deve gerar parcelas com vencimento a cada 30 dias, exe
 
 - Cobrar taxa fixa de 0,90 nas transações aprovadas;
 - Na requisição de transação (efetuar pagamento), o número do cartão deve conter 16 caracteres numéricos, sem espaços;
-- Caso o número de cartão que inicie com "5999", deve ter a transação reprovada, nos demais casos válidos a transação deve ser aprovada;
+- Caso o número do cartão inicie com "5999", deve ter a transação reprovada ao efetuar pagamento, nos demais casos válidos a transação deverá ser aprovada;
 - Gerar parcelas apenas em transações aprovadas;
-- O vencimento de cada parcela deve ser obtido através da multiplicação do número da parcela por 30, conforme exemplo: transação realizada em 2x (duas parcelas), deverá ter o primeiro vencimento com 30 dias após a data do pagamento (parcela 1 x 30), sendo a segunda parcela com vencimento em 60 dias após a data do pagamento (parcela 2 x 30 = 60);
-- O valor líquido da parcela é obtido a partir do valor bruto da transação subtraído a taxa fixa, dividido pelo número de parcelas. Ex: Se a transação for de R$100,00 em 2x (duas parcelas), seriam geradas duas parcelas de R$49,55 cada, sendo esse valor obtido a partir do valor da transação, nesse caso 100 reais, subtraido a taxa fixa, 0,90, e dividido pelo número de parcelas, no exemplo 2x.
+- O vencimento de cada parcela deverá ser obtido através da multiplicação do número da parcela por 30, conforme exemplificado acima;
+- O valor líquido da parcela deverá ser obtido a partir do valor bruto da transação subtraído a taxa fixa, dividido pelo número de parcelas.
 
 # Sobre o serviço
 
