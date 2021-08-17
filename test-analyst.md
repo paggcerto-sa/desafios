@@ -5,10 +5,13 @@ Atualmente na Pagcerto existem duas personas que podem fazer integração com os
 1- Endpoint de autenticação e geração de token de acesso: 
 
 https://desenvolvedor.pagcerto.com.br/v2/account/#operation/autenticar-com-credenciais. 
-\n
+
 Aplicativo (applicationId): NQze
+
 Login: analista.teste@email.com
+
 Senha: Analista@2021
+
 
 2- Endpoint para cadastro de titular (sublojista):
 http://desenvolvedor.dev.pagcerto.com.br/v2/account/#operation/conta-titular
