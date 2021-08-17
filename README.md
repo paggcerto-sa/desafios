@@ -10,3 +10,6 @@ Desenvolver um aplicativo Android.
 
 ## [Desafio para desenvolvedor iOS](https://github.com/paggcerto-sa/desafios/blob/master/mobile-ios.md)
 Desenvolver um aplicativo iOS.
+
+## [Desafio para analista de testes](https://github.com/paggcerto-sa/desafios/blob/master/test-analyst.md)
+Formular um documento compreendendo os testes requisitados no desafio.
