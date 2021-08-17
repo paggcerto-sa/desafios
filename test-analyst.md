@@ -28,7 +28,7 @@ Serão avaliadas suas habilidades junto a softwares de teste de API, como o Post
 
 No processo de teste, é importante que o testador tenha habilidades de consulta em banco de dados, para que ele possa validar retornos da API e informações vistas no front-end do sistema. Sendo assim, são apresentadas abaixo três tabelas para que você escreva o script de consulta de determinadas informações.
 
-IMAGEM DO DER
+![DER](https://user-images.githubusercontent.com/3877914/129735429-5e4de68a-fc39-40d1-8879-a33a322b130a.png)
 
 ## Consultas solicitadas
 
