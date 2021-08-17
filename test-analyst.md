@@ -6,6 +6,8 @@ Atualmente na Pagcerto existem duas personas que podem fazer integração com os
 
 https://desenvolvedor.pagcerto.com.br/v2/account/#operation/autenticar-com-credenciais. 
 
+URL: http://account.homol.pagcerto.com.br/api/v2/{applicationId}/signin
+
 Aplicativo (applicationId): NQze
 
 Login: analista.teste@email.com
@@ -15,6 +17,8 @@ Senha: Analista@2021
 
 2- Endpoint para cadastro de titular (sublojista):
 http://desenvolvedor.dev.pagcerto.com.br/v2/account/#operation/conta-titular
+
+URL: http://account.homol.pagcerto.com.br/api/v2/{applicationId}/signup/seller
 
 # Etapa 1: Evidências dos testes
 
