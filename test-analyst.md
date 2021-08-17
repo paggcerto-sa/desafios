@@ -1,6 +1,6 @@
 # Analista de Testes
 
-Atualmente na Pagcerto existem duas personas que podem fazer integração com os endpoints, além do login no sistema de gestão. São elas o usuário parceiro e o usuário lojista do parceiro. Um usuário parceiro, ao ser cadastrado e devidamente liberado para acesso aos endpoints e sistema de gestão, pode fazer o cadastro de seus sublojistas (lojista de parceiro). Na hierarquia, ele é responsável pelas movimentações de seus lojistas. O desafio desse teste é realizar o cadastro de um sublojista com as credenciais do parceiro, devendo ser validado as regras de negócio descritas na documentação. Para cadastrar um titular (sublojista), você precisa de dois endpoints:
+Atualmente na Pagcerto existem duas personas que podem fazer integração com os endpoints, além do login no sistema de gestão. São elas o usuário parceiro e o usuário lojista do parceiro. Um usuário parceiro, ao ser cadastrado e devidamente liberado para acesso aos endpoints e sistema de gestão, pode fazer o cadastro de seus sublojistas (lojista de parceiro). Na hierarquia, ele é responsável pelas movimentações de seus lojistas. O desafio desse teste é realizar o cadastro de um sublojista com as credenciais do parceiro (token), devendo ser validado as regras de negócio descritas na documentação. Para cadastrar um titular (sublojista), você precisa de dois endpoints:
 
 1- Endpoint de autenticação e geração de token de acesso: 
 
@@ -21,13 +21,12 @@ http://desenvolvedor.dev.pagcerto.com.br/v2/account/#operation/conta-titular
 Serão avaliadas suas habilidades junto a softwares de teste de API, como o Postman, por exemplo. Observação: dois sublojistas com o mesmo documento (CPF) não podem ser cadastrados no mesmo parceiro. 
 
 ## Resultado esperado:
-- Validar essa regra de negócio e simular os erros 422, descritos na documentação. 
+- Validar as regras de negócio e simular os erros 422, descritos na documentação. 
 - Formular um documento descrevendo os testes realizados e os resultados obtidos, adicionando nesse documento prints de evidências dos testes realizados.
 
 # Etapa 2: Banco de dados
 
-No processo de teste, é importante que o testador tenha habilidades de consulta em banco de dados, para que ele possa validar retornos da API e informações vistas no front-end do sistema. Sendo assim, são apresentadas abaixo três tabelas
-para que você escreva o script de consulta de determinadas informações.
+No processo de teste, é importante que o testador tenha habilidades de consulta em banco de dados, para que ele possa validar retornos da API e informações vistas no front-end do sistema. Sendo assim, são apresentadas abaixo três tabelas para que você escreva o script de consulta de determinadas informações.
 
 IMAGEM DO DER
 
