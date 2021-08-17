@@ -32,10 +32,10 @@ No processo de teste, é importante que o testador tenha habilidades de consulta
 
 ## Consultas solicitadas
 
-- Sabendo que todo parceiro é lojista, mas nem todo lojista é parceiro, e que isso é identificado através da coluna Parceiro na tabela de Conta, escrever uma consulta SQL que retorne o IdTitular e o Saldo de todos os parceiros ativos da Pagcerto.
+- Sabendo que todo parceiro é lojista, mas nem todo lojista é parceiro, e que isso é identificado através da coluna Parceiro na tabela de ContaPagamento, escrever uma consulta SQL que retorne o IdTitular e o Saldo de todos os parceiros ativos da Pagcerto.
 - Escrever um script que retorne os valores das seguintes colunas: IdTitular, Id, Valor e DataCadastro (essas três últimas colunas da tabela MovimentacaoConta) das tabelas de ContaPagamento e MovimentacaoConta referente as movimentações no período entre 01 de junho de 2021 e 30 de junho de 2021.
 - Sabendo que o detalhe da movimentação pode ser de três tipos: pagamento-conta, transferencia-automatica e taxa-pagamento-conta, escreva um script que retorne o IdTitular, juntamente com o valor e a descrição, quando o tipo do detalhe for "pagamento-conta", também dentro do período da movimentação que abrange de 01 de junho de 2021 e 30 de junho de 2021.
 
 # Sobre o desenvolvimento da solução
 
-Utilize seus conhecimentos e técnicas como analista de testes para formular um documento compreendendo as duas etapas descritas nesse desafio. 
+Utilize seus conhecimentos e técnicas como analista de testes para formular um documento compreendendo as duas etapas descritas nesse desafio. Os scripts SQL devem ser feitos para SQL SERVER
