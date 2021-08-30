@@ -22,7 +22,7 @@ URL: http://account.homol.pagcerto.com.br/api/v2/{applicationId}/signup/seller
 
 # Etapa 1: Evidências dos testes
 
-Serão avaliadas suas habilidades junto a softwares de teste de API, como o Postman, por exemplo. Observação: dois sublojistas com o mesmo documento (CPF) não podem ser cadastrados no mesmo parceiro. 
+Serão avaliadas suas habilidades junto a softwares de teste de API, como o Postman, por exemplo. Observação: dois sublojistas com o mesmo documento (CPF) não podem ser cadastrados no mesmo parceiro, caso as contas sejam do tipo pessoa física (PF). Se apenas uma das contas for do tipo PF, poderia ser cadastrado uma conta jurídica (PJ) para o mesmo representante (CPF), mas não deveria permitir cadastro com o mesmo CNPJ. 
 
 ## Resultado esperado:
 - Validar as regras de negócio e simular os erros 422, descritos na documentação. 
