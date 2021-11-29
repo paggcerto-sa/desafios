@@ -66,7 +66,6 @@ Para cada solicitação de antecipação, devem ser mantidas as seguintes inform
 
 - Não é permitido incluir em uma nova solicitação de antecipação transações solicitadas anteriormente;
 - Para realização de uma nova solicitação de antecipação, é necessário que a solicitação atual já tenha sido finalizada;
-- Uma transação com análise aprovada ou reprovada não pode ser modificada, ou seja, não deve permitir alteração no status (aprovada/reprovada);
 - A data de finalização da análise deve ser preenchida quando todas as transações da antecipação forem resolvidas como aprovadas ou reprovadas;
 - Aplicar taxa de 3.8% em cada parcela de transação antecipada, considerando o valor líquido da parcela. Esse valor deve ser armazenado no campo "Valor antecipado" da parcela da transação em questão;
 - Caso a transação seja aprovada na antecipação, ao finalizar a solicitação, deve ter o campo "Data em que a parcela foi repassada", da entidade "Parcela", preenchida com a data atual.
@@ -86,10 +85,6 @@ Implemente os seguintes endpoints na API:
 - Iniciar o atendimento da antecipação;
 - Aprovar ou reprovar uma ou mais transações da antecipação (quando todas as transações forem finalizadas, a antecipação será finalizada);
 - Consultar histórico de antecipações com filtro por status (pendente, em análise, finalizada).
-
-# Etapa 3: Testes
-
-Faça a implementação dos testes necessários a fim de garantir o cumprimento das regras de negócio descritas no desafio.
 
 # Sobre o desenvolvimento da solução
 
