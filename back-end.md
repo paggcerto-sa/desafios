@@ -1,6 +1,6 @@
 # Transação com cartão e antecipação de recebíveis
 
-A Pagcerto pretende lançar no mercado o serviço de antecipação de recebíveis, e para isso precisamos da sua ajuda. Aos lojistas/vendedores serão permitidos solicitar antecipação de recebíveis das transações aprovadas pela Pagcerto. Seu desafio é desenvolver um projeto que represente esse produto, sendo a implementação discorrida em três etapas. A primeira etapa destina-se a transação com cartão, a segunda tem foco no gerenciamento de antecipação e a terceira trata sobre os testes funcionais.
+A Pagcerto pretende lançar no mercado o serviço de antecipação de recebíveis, e para isso precisamos da sua ajuda. Aos lojistas/vendedores serão permitidos solicitar antecipação de recebíveis das transações aprovadas pela Pagcerto. Seu desafio é desenvolver um projeto que represente esse produto, sendo a implementação discorrida em duas etapas. A primeira etapa destina-se a transação com cartão e a segunda tem foco no gerenciamento de antecipação. 
 
 # Etapa 1: Transação
 
