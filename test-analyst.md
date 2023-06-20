@@ -8,15 +8,15 @@ https://desenvolvedor.pagcerto.com.br/v2/account/#operation/autenticar-com-crede
 
 URL: http://account.homol.pagcerto.com.br/api/v2/{applicationId}/signin
 
-Aplicativo (applicationId): NQze
+Aplicativo (applicationId): vEDg
 
 Login: analista.teste@email.com
 
-Senha: Analista@2021
+Senha: Analista@2023
 
 
 2- Endpoint para cadastro de titular (sublojista):
-http://desenvolvedor.dev.pagcerto.com.br/v2/account/#operation/conta-titular
+https://desenvolvedor.pagcerto.com.br/v2/account/#tag/conta-titular
 
 URL: http://account.homol.pagcerto.com.br/api/v2/{applicationId}/signup/seller
 
